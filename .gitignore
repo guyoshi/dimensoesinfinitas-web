@@ -1,0 +1,22 @@
+# Segredos e configuração local
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Dependências e compilações futuras
+node_modules/
+dist/
+build/
+.next/
+.vercel/
+.cache/
+coverage/
+
+# Logs e arquivos locais
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
