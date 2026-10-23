@@ -47,5 +47,5 @@ Data: 23/10/2026.
 ## Validação ainda pendente
 - Screenshot visual de navegador real em 360, 390, 430, 768 e 1280 px; testar com Chrome/Firefox/Safari; testes de toque e formulário end-to-end; Core Web Vitals depois do deploy.
 - Ferramentas de leitura pública do domínio neste ambiente não devolveram conteúdo e não há integração de Cloudflare autenticada. **Não afirmar** screenshots ou produção confirmada.
-- Lista DOI e e-mails condicionados às 3 variáveis secretas e configuração do provedor.
+- Lista DOI e e-mails agora preparados para beehiiv Free, condicionados às 2 variáveis BEEHIIV_API_KEY e BEEHIIV_PUBLICATION_ID, à confirmação de e-mail e configuração do provedor.
 - Observar leitores brasileiros reais e iterar: cor mais legível não garante automaticamente maior inscrição.

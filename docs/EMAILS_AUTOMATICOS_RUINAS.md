@@ -1,65 +1,67 @@
-# Sequência de e-mails — Ruínas dos Céus
-Preparado em 23/10/2026. **Modelos para implementação na Brevo, não e-mails disparados.**
- 
-## Remetente
-Nome público: **Guilherme S. L. Anjos | Dimensões Infinitas**.
-Configurar endereço real no domínio verificado (não inventar endereço antes da criação da caixa). Autenticar SPF/DKIM conforme instruções reais do provedor. Todos os e-mails de marketing devem oferecer descadastro.
+# Textos oficiais: e-mails da beehiiv Free | Dimensões Infinitas
 
-## E-mail 1 — Confirmação de inscrição (obrigatório)
-Gatilho: formulário público -> Brevo API /contacts/doubleOptinConfirmation.
-Assunto: **Confirme seu interesse em Ruínas dos Céus**
-Pré-cabeçalho: **Um clique para receber o aviso quando o livro chegar.**
+Atualizado em 23/10/2026. **Textos prontos para colar nos Preset Emails da beehiiv. Não significam mensagens enviadas.** O plano Free tem confirmação DOI e um welcome email, não automações longas gratuitas.
+
+## Identificação visual/remetente
+Nome: **Guilherme S. L. Anjos | Dimensões Infinitas**
+Responder para: endereço real escolhido pelo autor em Settings > Emails > Email Sending Details.
+Adicionar rodapé de endereço/identificação e descadastro da própria plataforma. Não inventar endereço.
+
+## 1. Double Opt-in Email
+Configuração: **Settings > Emails > Preset Emails > Double Opt-in Email > View Opt in Email > Edit Email**
+Assunto: **Confirme sua inscrição para acompanhar Ruínas dos Céus**
+Texto de prévia: **Só falta confirmar que este e-mail é seu.**
 
 Olá!
 
-Você pediu para receber notícias sobre *Ruínas dos Céus*, meu romance de fantasia épica ambientado em Etérea.
+Você pediu para acompanhar as novidades de *Ruínas dos Céus*, minha história de fantasia épica sobre uma civilização acima do mundo e uma jovem que começa a questionar o que conhece.
 
-Para confirmar que foi você quem fez o cadastro, clique no botão abaixo:
+Para confirmar sua inscrição, clique no botão abaixo.
 
-**[Confirmar minha inscrição]**
+**[CONFIRMAR MINHA INSCRIÇÃO]** ← manter o **botão nativo de confirmação da beehiiv**, não colocar link manual.
 
-Se não fez esse pedido, é só ignorar este e-mail. Você não será incluído na lista.
+Se você não solicitou estas mensagens, ignore este e-mail. Seu endereço não será incluído como inscrito ativo sem confirmação.
 
-Até breve,
-**Guilherme S. L. Anjos**
+Guilherme S. L. Anjos
 Dimensões Infinitas
 
-**Implementação:** no botão de template Double Opt-In da Brevo utilizar a variável oficial de link DOI, conforme documentação do provedor; no template API pode usar `{{ params.DOIurl }}` onde aplicável. O template deve ser criado/validado no painel. NÃO substituir o link de confirmação por um link direto à home.
+Configurar **Opt-in Redirect URL** = https://dimensoesinfinitas.com/inscricao-confirmada/
 
-## E-mail 2 — Boas-vindas após confirmação (automatização opcional)
-Gatilho: novo inscrito **confirmado** adicionado à lista de lançamento. Enviar **somente após o consentimento confirmado**.
+## 2. Welcome Email, único e gratuito
+Configuração: **Settings > Emails > Preset Emails > Welcome Email > View Welcome Email > Edit Email**. Ativar. Ocorre após a confirmação DOI.
 
 Assunto: **Bem-vindo a Etérea**
-Pré-cabeçalho: **Uma civilização acima do mundo. Uma história prestes a cair.**
+Prévia: **Você acaba de entrar no universo de Ruínas dos Céus.**
 
 Olá!
 
 Sou Guilherme S. L. Anjos, autor de *Ruínas dos Céus*. Obrigado por querer acompanhar o lançamento.
 
-Imagine um povo que sempre viveu entre ilhas suspensas e aprendeu a acreditar que jamais tocaria o chão. Agora, pequenas mudanças no vento começam a desafiar tudo o que ele conhece.
+Imagine um povo que vive há gerações entre ilhas suspensas. Abaixo, só nuvens. Acima, uma certeza: aquele mundo jamais cairá.
 
-É nesse mundo que você vai conhecer Jokara.
+Jokara começa a perceber sinais de que talvez as coisas não sejam tão simples.
 
-Enquanto preparo a publicação, vou compartilhar novidades pontuais e avisar quando as edições digital e impressa estiverem disponíveis.
+Se quiser conhecer Etérea agora, deixei o primeiro capítulo disponível gratuitamente. Você pode ler no celular, ajustar a fonte e escolher o modo de leitura:
 
-Se ainda não começou a leitura gratuita, o primeiro capítulo está aqui:
+**[LER O PRIMEIRO CAPÍTULO](https://dimensoesinfinitas.com/ciclo-de-jesed/ruinas-dos-ceus/ler/)**
 
-**[Ler gratuitamente “O Sopro de Etérea”](https://dimensoesinfinitas.com/ciclo-de-jesed/ruinas-dos-ceus/ler/)**
+Quando houver novidades importantes sobre o livro e sua publicação, enviarei notícias por aqui.
 
 Boa leitura,
-**Guilherme S. L. Anjos**
+Guilherme S. L. Anjos
 Dimensões Infinitas
 
-Rodapé: informação de tratamento de dados + link de descadastro fornecido pelo provedor.
+Rodapé com descadastro nativo, política de privacidade e informações exigidas pela plataforma.
 
-## E-mail 3 — Aviso quando a obra estiver disponível (manual)
-Gatilho: **somente quando os links Kindle/KDP e Bok2 estiverem publicados e testados**.
-Assunto sugerido: **Ruínas dos Céus chegou: a história de Etérea já pode ser lida**
-Corpo: gancho sem spoilers, mensagem do autor, formatos disponíveis, botões reais das lojas, link para capítulo gratuito e descadastro.
+## 3. Campanha de lançamento (manual, somente quando disponível)
+Configuração: **Newsletter > Posts**, compor e enviar para inscritos confirmados; NÃO usar automações premium da avaliação de 14 dias.
+Assunto sugerido: **Ruínas dos Céus chegou: Etérea espera por você**
+Incluir: mensagem breve do autor, gancho sem spoiler, links **reais e testados** de Kindle e edição impressa, opção de ler o capítulo grátis, descadastro.
 
-## Restrições editoriais e regulatórias
-- Não revelar a sobrevivência de Jokara, a superfície, desfechos ou conexões secretas.
-- Não usar falsa urgência/escassez, depoimentos não autorizados ou promessa de lançamento em data não confirmada.
-- Não disparar e-mails para os contatos não confirmados.
-- Não medir e-mail “enviado” como “lido”, nem clique como venda.
-- Antes de ativar: DNS do remetente, política de privacidade revisada, canal de direitos, teste de confirmação e descadastro, prevenção de spam e conexão Brevo.
+## Condições editoriais
+- Não afirmar que o livro já está disponível antes da confirmação da publicação.
+- Não mencionar quantidade de 34 livros planejados como se publicados.
+- Evitar spoilers da vida de Jokara após o Cataclismo ou sobre o desfecho.
+- DOI on: Pending não recebe newsletter até confirmar.
+- A beehiiv mantém a lista em **Subscribers**, com exportação em **Settings > Export Data**.
+- Nunca compartilhar chave API em código, GitHub ou conversa.

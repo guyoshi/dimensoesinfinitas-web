@@ -22,7 +22,7 @@
       const submit = form.querySelector('button[type=submit]');
       if(!available) {
         submit.disabled = true;
-        submit.title = 'Cadastro por e-mail ainda em configuração';
+        submit.title = 'Inscrições ainda em configuração (beehiiv)';
         setState(form,'O cadastro por e-mail será habilitado após a configuração segura do envio. Enquanto isso, a leitura gratuita está disponível.');
       }
     });

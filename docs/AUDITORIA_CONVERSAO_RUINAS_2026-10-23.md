@@ -59,13 +59,16 @@ Atualização: 23/10/2026. Implementação da home, landing dedicada, leitor com
 - **Risco de conversão:** primeiros parágrafos contemplativos podem criar abandono em tráfego frio. Testar qualitativamente a abertura com 8–12 leitores-alvo e comparar indicadores de avanço/abandono, sem trocar a ordem do livro por ranking de emoções.
 - Alternativa de teste futuro: um microtrecho do Capítulo 1 como prévia na landing, sem substituir a página integral.
 
-## Newsletter: o que está e não está ativo
-- Formulários e rota do Worker: `/api/newsletter/status`, `/api/newsletter/subscribe`.
-- Provedor projetado: Brevo API v3, fluxo double opt-in oficial `/contacts/doubleOptinConfirmation`. A confirmação depende de template DOI verdadeiro e remetente verificado.
-- **PENDENTE DE CONFIGURAÇÃO REAL:** Brevo account, lista, template DOI, domínio/remetente, DNS de e-mail, 3 segredos no Cloudflare Worker (`BREVO_API_KEY`, `BREVO_LIST_ID`, `BREVO_DOI_TEMPLATE_ID`), teste ponta a ponta, canal de contato de privacidade, mitigação de bots. Nenhum segredo deve entrar no GitHub.
-- Frontend consulta status; sem configuração, botão fica desativado e exibe indisponibilidade com honestidade. Não cria lead fictício, não confirma inscrição sem e-mail.
-- Formulário com consentimento não pré-marcado. O envio de confirmação é `newsletter_request`; `newsletter_signup` exige confirmação na Brevo e não é disparado prematuramente.
-- Página pública de privacidade é um rascunho implementável, requer validação jurídica/operacional antes de ativar a lista.
+## Newsletter: integração atual beehiiv Free (substitui o plano Brevo)
+- Formulários originais permanecem em `/api/newsletter/status` e `/api/newsletter/subscribe`; Cloudflare Worker passou a chamar beehiiv API v2.
+- **Não há credenciais nem teste real ainda.** Nunca afirmar cadastro funcionando apenas por commit.
+- Plano gratuito de outubro de 2026 = até **2.500 assinantes, envios de newsletter ilimitados**, um welcome email grátis; múltiplas automações de e-mail são pagas. Teste inicial de 14 dias fornece acesso temporário ao Pro; sem upgrade, permanece Free.
+- Contatos são armazenados na beehiiv: **Subscribers > Subscribers**, com exportação CSV em **Settings > Export Data**.
+- Exigir DOI via `double_opt_override:"on"` no endpoint, sem reativar descadastros automaticamente, enviar Welcome Email nativo se configurado.
+- Requer `BEEHIIV_API_KEY` e `BEEHIIV_PUBLICATION_ID` no Worker; API key exige verificação de identidade Stripe (sem assinar plano pago).
+- Detalhes operacionais e alternativa embed em [GUIA_BEEHIIV_CLOUDFLARE.md](GUIA_BEEHIIV_CLOUDFLARE.md).
+- Inscrição `Pending` não equivale a `Active`. `newsletter_request` no cliente não é métrica de confirmação.
+- Proteção antispam atual é básica; adicionar Cloudflare Turnstile/rate-limit se necessário.
 
 ## Eventos e avaliação de resultado
 - Medir sem misturar eventos: `book_view` (visitas à landing), `sample_open`, `newsletter_request`, `newsletter_signup` (inscrito **confirmado no provedor**), `kindle_click`, `bok2_click` e vendas reais KDP/Bok2.
@@ -78,7 +81,7 @@ Atualização: 23/10/2026. Implementação da home, landing dedicada, leitor com
 - Verificar deploy Cloudflare Worker, HTML e assets, renderização visual mobile/desktop e links.
 - Revisar capa atual versus a capa oficial mais recente aprovada.
 - Revalidar capítulo 1 contra o manuscrito editorial final antes de promover massivamente.
-- Ativar e testar double opt-in e link de descadastro, autenticação DNS e canal para direitos do titular.
+- Ativar e testar double opt-in e link de descadastro na beehiiv, remetente e canal para direitos do titular.
 - Testar rate limiting/anti-spam no formulário; honeypot e tempo mínimo não são proteção suficiente contra ataques direcionados.
 - Associar e verificar GA4/Search Console conforme consentimento e política aplicável.
 - Conferir que não haja spoilers posteriores à queda na página pública.
