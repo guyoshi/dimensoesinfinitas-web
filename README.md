@@ -1,40 +1,39 @@
-# Dimensões Infinitas — Site Comercial Oficial
+# Dimensões Infinitas — site comercial oficial
 
-**Estado (23/10/2026):** **home comercial construída** em `public/index.html` e enviada à `main` no commit `7df3bbf`. A publicação no Cloudflare ainda precisa ser confirmada após o build. A landing específica, amostra, newsletter e compras permanecem pendentes.
+**Atualizado 23/10/2026:** home reposicionada para conversão em leitura, landing de *Ruínas dos Céus*, leitor gratuito do Capítulo 1 com modo imersivo e infraestrutura preparada para newsletter double opt-in. **A publicação real do código no Cloudflare e a integração Brevo não foram verificadas.**
 
-Este repositório será a interface **pública e comercial** de Dimensões Infinitas, com páginas de apresentação de livros, captação consentida de leitores e ligações de compra. Ele não contém manuscritos, resumos completos de capítulos, spoilers, senhas nem documentação interna de cânone.
+## Objetivo
+Pré-lançamento: atrair leitores brasileiros de fantasia épica adulta, oferecer leitura gratuita do Capítulo 1 sem cadastro e, opcionalmente, formar uma lista de e-mails consentida e confirmada para o anúncio da publicação. No lançamento, transformar o funil em cliques e **vendas reais** Kindle/KDP e Bok2, sem prometer compra antes de links ativos. Longo prazo: marca Dimensões Infinitas e demais séries.
 
-## Fronteiras dos repositórios
+## Repositórios
+- `guyoshi/dimensoesinfinitas` (privado): manuscritos, cânone e plano editorial;
+- `guyoshi/dimensoesinfinitassite`: portal de exploração e lore (não é a landing comercial);
+- `guyoshi/dimensoesinfinitas-web` (este): site leve, público e orientado à descoberta/leitura.
 
-| Repositório | Função |
-|---|---|
-| `guyoshi/dimensoesinfinitas` (privado) | Livros, documentação canônica, planejamento editorial e dossiês de lançamento |
-| `guyoshi/dimensoesinfinitassite` (atual) | Portal interativo e exploração do universo |
-| `guyoshi/dimensoesinfinitas-web` (este) | Site comercial oficial, leve e orientado a lançamentos |
+## Rotas
+- `/`: marca + livro em destaque + conversão.
+- `/ciclo-de-jesed/ruinas-dos-ceus/`: landing específica para divulgação por criadores, redes e campanhas.
+- `/ciclo-de-jesed/ruinas-dos-ceus/ler/`: **texto integral atual** do Capítulo 1, “O Sopro de Etérea”, com tamanho de fonte, temas, progresso e tela cheia/foco.
+- `/privacidade/`: transparência sobre dados e lista.
+- `/inscricao-confirmada/`: destino do double opt-in caso ativado.
 
-Nenhum conteúdo dos outros repositórios deve ser copiado automaticamente para cá. Publicar somente materiais aprovados.
+## Assets e direitos
+Capa existente em `public/assets/ruinas-dos-ceus-capa.webp`. Logos, selo N e assinatura originais copiados do repositório canônico `98 - Assets Gerais/Logos/Dimensões Infinitas/` para `public/assets/`, sem refazer tipografia. Nome de autoria oficial: **Guilherme S. L. Anjos**.
 
-## Decisões definidas
-- **Público inicial:** Brasil, PT-BR.
-- **Domínio comprado pelo autor:** `dimensoesinfinitas.com`, gerenciado pelo Cloudflare (informação confirmada pelo autor em 23/10/2026). **Vinculação DNS/hospedagem ainda não configurada/verificada**.
-- **Inglês:** preparar estrutura futura em `/en/`; não criar páginas traduzidas vazias agora.
-- **Livro de destaque inicial:** *Ruínas dos Céus*.
-- **Ciclo de Jesed:** pentalogia circular, cinco portas de entrada. Slogan oficial: **“Cinco histórias. Um único ciclo. Sem início e sem fim.”**
-- **Sinopse:** utilizar a versão oficial registrada no dossiê privado de lançamento; não revelar a sobrevivência de Jokara nem a passagem à superfície nos textos comerciais.
-- **Digital:** Amazon KDP; **impresso:** Bok2, com links inseridos somente quando confirmados.
-- **Privacidade:** cookies e analytics somente após a definição de consentimento aplicável; formulário com finalidade clara, política de privacidade e opção de descadastro.
+## Técnica
+Cloudflare Workers com static assets em `./public`, Worker `src/index.js` exclusivo para `/api/*`. `wrangler.jsonc` configura binding `ASSETS` e `run_worker_first: ["/api/*"]`. A newsletter usa a API Brevo DOI, se configurada; o Worker nunca publica tokens ao browser. Frontend informa indisponibilidade enquanto não estiver configurado.
 
-## Estado técnico
-Existem `wrangler.jsonc` e home funcional em `public/index.html`, com estilos responsivos e navegação por âncoras. Domínio Cloudflare vinculado pelo autor; deploy novo pendente de comprovação. Ainda não há landing dedicada, amostra aprovada, newsletter, analytics, formulário de leads ou links de compra ativos. Essas decisões serão tomadas na etapa de implementação, para evitar dependências antecipadas.
+### Configuração de inscrições (não concluída)
+1. Criar/validar conta Brevo, identidade de remetente e autenticação do domínio de e-mail.
+2. Criar lista e template de confirmação DOI com link `{{ params.DOIurl }}`, link de descadastro nos envios e uma campanha de boas-vindas/avisos; validar o fluxo escolhido.
+3. No painel Cloudflare Worker, adicionar `BREVO_API_KEY` como **Secret** e `BREVO_LIST_ID`, `BREVO_DOI_TEMPLATE_ID` como secrets ou variáveis internas. Nunca commitar segredos.
+4. Publicar/republicar o Worker, testar `GET /api/newsletter/status` (ready true), enviar inscrição de teste, confirmar link, verificar presença na lista e descadastrar.
+5. Confirmar contato de privacidade, política final e limitação de abuso (rate limiting/Turnstile) antes de divulgação ampla.
 
-## Objetivos de conversão oficiais (outubro de 2026)
-1. **Pré-lançamento:** apresentar Ruínas dos Céus e conseguir leitores interessados que optem por receber avisos (cadastro de newsletter, evento principal quando habilitado), mas sem bloquear a leitura gratuita do capítulo.
-2. **Lançamento:** vendas na Amazon KDP e Bok2 por links externos; monitorar cliques e vendas reais separadamente.
-3. **Longo prazo:** marca autoral e catálogo de séries do Dimensões Infinitas, reutilizando leitores consentidos para novos lançamentos.
+## SEO/medição
+`robots.txt` e `sitemap.xml` cobrem somente páginas públicas. OG/canonical disponíveis. GA4/Search Console ainda não configurados; nenhum contador de conversões foi inventado. Em etapa futura, ativar métricas condicionadas a consentimento válido e mensurar inscrição **confirmada**, não apenas clique.
 
-**Arquitetura escolhida:** página inicial de marca com lançamento em destaque + landing dedicada do livro em `/ciclo-de-jesed/ruinas-dos-ceus/`, direcionada por Instagram e criadores. Nunca substituir o site inteiro por uma única landing.
+## Pesquisa, decisões e pendências
+Auditoria detalhada de blocos, critérios de amostra, comparações e backlog: [docs/AUDITORIA_CONVERSAO_RUINAS_2026-10-23.md](docs/AUDITORIA_CONVERSAO_RUINAS_2026-10-23.md).
 
-**Hospedagem proposta:** Cloudflare Pages com integração ao repositório GitHub `guyoshi/dimensoesinfinitas-web` via branch `main`, prévias por PR e domínio personalizado só depois do primeiro deploy válido. Conexão à conta Cloudflare ainda pendente; nenhuma configuração DNS foi presumida.
-
-## Próxima etapa (não executada)
-Ver `docs/IMPLEMENTACAO.md` e `docs/ARQUITETURA.md`.
+Documentos anteriores mantidos: `docs/BENCHMARK_10_AUTORES_INDEPENDENTES_E_CROWDFUNDING.md`, `docs/BENCHMARK_10_HOMES_AUTORES_E_WIREFRAME.md`, `docs/IMPLEMENTACAO.md`, `docs/ARQUITETURA.md`. As pesquisas documentam modelos e não comprovam taxas de conversão dos concorrentes.

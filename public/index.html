@@ -1,234 +1,57 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#080d17">
-  <meta name="description" content="Dimensões Infinitas, universo literário de Guilherme S. L. Anjos. Conheça Ruínas dos Céus, uma fantasia épica sobre a queda de uma civilização acima do mundo.">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="pt_BR">
-  <meta property="og:title" content="Dimensões Infinitas | Histórias de Guilherme S. L. Anjos">
-  <meta property="og:description" content="Eles construíram uma civilização acima do mundo. Até o céu começar a cair. Descubra Ruínas dos Céus.">
-  <meta property="og:url" content="https://dimensoesinfinitas.com/">
-  <link rel="canonical" href="https://dimensoesinfinitas.com/">
-  <title>Dimensões Infinitas | Guilherme S. L. Anjos</title>
-  <style>
-    :root {color-scheme:dark;--night:#080d17;--navy:#111e31;--navy2:#192941;--gold:#d5b16d;--softgold:#f0d69d;--white:#f7f3ed;--muted:#b2bac7;--line:rgba(227,197,142,.19)}
-    * {box-sizing:border-box}
-    html {scroll-behavior:smooth}
-    body {margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--night);color:var(--white);line-height:1.6}
-    body:before{content:"";position:absolute;pointer-events:none;top:0;left:0;right:0;height:950px;background:radial-gradient(ellipse 70% 54% at 70% 10%,#29446170 0,transparent 72%);z-index:-1}
-    ::selection{background:#d5b16d;color:#0a111b}
-    a{color:inherit;text-decoration:none}button{font:inherit}
-    a:focus-visible,button:focus-visible{outline:3px solid var(--softgold);outline-offset:4px}
-    .wrap{width:min(1180px,calc(100% - 48px));margin:auto}
-    .topbar{border-bottom:1px solid var(--line);background:#080d17e8;position:sticky;top:0;z-index:30;backdrop-filter:blur(18px)}
-    .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:82px}
-    .wordmark{display:flex;align-items:center;gap:11px;font-family:Georgia,serif;font-size:clamp(16px,2vw,23px);font-weight:500;text-transform:uppercase;letter-spacing:.095em;line-height:1.05}
-    .mark{width:32px;height:32px;flex:none;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--softgold);font-size:24px;font-family:Georgia,serif}
-    .nav{display:flex;align-items:center;gap:clamp(14px,2.5vw,36px);font-size:13px;letter-spacing:.04em;color:#e4e4e7}
-    .nav a:hover,.foot-links a:hover,.smalllink:hover{color:var(--softgold)}
-    .nav .nav-accent{border:1px solid var(--line);padding:10px 14px;border-radius:4px}
-    .hero{padding:clamp(58px,7vw,105px) 0 88px;position:relative;overflow:hidden}
-    .hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(300px,.95fr);align-items:center;gap:clamp(32px,6vw,90px)}
-    .eyebrow{color:var(--gold);font-size:11px;font-weight:700;letter-spacing:.22em;text-transform:uppercase}
-    h1,h2,h3,p{margin-top:0}
-    h1,h2,h3,.quote{font-family:Georgia,"Times New Roman",serif;font-weight:400}
-    h1{font-size:clamp(52px,6.1vw,90px);line-height:1.05;letter-spacing:-.045em;margin:19px 0 24px}
-    h1 em{color:var(--softgold);font-style:normal}
-    .intro{font-size:clamp(17px,1.8vw,20px);max-width:530px;color:#d8dce6;margin-bottom:20px}
-    .summary{color:var(--muted);max-width:535px;margin-bottom:34px}
-    .actions{display:flex;flex-wrap:wrap;gap:13px;align-items:center}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 23px;border-radius:3px;border:1px solid var(--gold);font-size:13px;font-weight:700;letter-spacing:.02em;transition:transform .2s,background .2s;cursor:pointer}
-    .btn:hover{transform:translateY(-2px)}
-    .btn-primary{background:var(--gold);color:#101725}
-    .btn-primary:hover{background:var(--softgold)}
-    .btn-outline{color:#f7ede0;background:transparent}
-    .btn-outline:hover{background:#d5b16d18}
-    .release-note{color:#9ca7b5;font-size:12px;margin-top:20px}
-    .hero-art{position:relative;max-width:480px;margin:auto;width:100%}
-    .hero-art:before{content:"";position:absolute;inset:5% -7% 2%;border:1px solid #cfac6752;transform:rotate(4deg);z-index:0}
-    .hero-art:after{content:"";position:absolute;inset:15% -12% -8%;background:radial-gradient(ellipse,#c69c6a37 0,transparent 67%);z-index:-1}
-    .cover{display:block;position:relative;width:100%;max-height:670px;object-fit:contain;box-shadow:0 20px 70px #0009;background:linear-gradient(150deg,#365472,#162337 60%,#0c1421);aspect-ratio:2/3}
-    .cover-fallback{position:absolute;inset:0;display:none;padding:12%;text-align:center;align-items:center;justify-content:center;flex-direction:column;gap:24px;font-family:Georgia,serif;background:linear-gradient(150deg,#54708a,#0e1b2e 70%);border:1px solid var(--line)}
-    .cover-fallback strong{font-size:clamp(30px,4vw,56px);line-height:1.06;font-weight:normal;color:var(--softgold)}
-    .cover-fallback span{font-size:12px;letter-spacing:.24em}
-    .book-figure{margin:0;position:relative}
-    .book-figure figcaption{text-align:center;color:#aeb9c8;font-size:11px;letter-spacing:.13em;text-transform:uppercase;margin-top:24px}
-    .fine-divider{height:1px;background:linear-gradient(90deg,transparent,var(--line),transparent)}
-    .story-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:0;padding:24px 0}
-    .story-strip span{text-align:center;padding:14px;font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:#c5c2bd}
-    .story-strip span+span{border-left:1px solid var(--line)}
-    .section{padding:95px 0}
-    .section-head{max-width:720px;margin-bottom:42px}
-    .section-head h2{font-size:clamp(36px,4.5vw,60px);letter-spacing:-.032em;line-height:1.12;margin:14px 0 18px}
-    .section-head p{color:var(--muted);font-size:16px}
-    .feature{background:linear-gradient(110deg,#16243b 0%,#0e192a 65%,#131f32);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-    .feature-grid{display:grid;grid-template-columns:.72fr 1.28fr;gap:clamp(30px,7vw,105px);align-items:center}
-    .book-medallion{width:min(290px,100%);aspect-ratio:1;margin:auto;border:1px solid #bea06f52;border-radius:50%;display:grid;place-items:center;position:relative;color:var(--gold);font:clamp(42px,7vw,86px) Georgia,serif;background:radial-gradient(circle,#9a795d30,transparent 65%)}
-    .book-medallion:before,.book-medallion:after{content:"";position:absolute;inset:15px;border:1px dashed #d5b16d52;border-radius:50%}
-    .book-medallion:after{inset:39px;border-style:solid;opacity:.4}
-    .feature h2{font-size:clamp(40px,5vw,66px);line-height:1.15}
-    .feature h2 span{color:var(--gold)}
-    .feature p{color:#bcc8d5;max-width:610px}
-    .smalllink{display:inline-block;margin-top:10px;color:var(--softgold);font-size:13px;font-weight:600;border-bottom:1px solid #af905b;padding-bottom:5px}
-    .synopsis{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(26px,6vw,90px);align-items:start}
-    .synopsis .quote{font-size:clamp(28px,3.5vw,43px);line-height:1.29;color:#efd39b}
-    .copy p{color:#c9d0db;font-size:15px;line-height:1.85;margin-bottom:17px}
-    .universe{background:#0f1b2a}
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-    .card{border:1px solid var(--line);border-radius:4px;min-height:260px;padding:30px 27px;background:linear-gradient(150deg,#1b2b42,#101926);display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden}
-    .card:before{content:"✧";position:absolute;top:-25px;right:24px;font:170px Georgia,serif;color:#e3c18a0c}
-    .card:nth-child(2){background:linear-gradient(150deg,#30263c,#111a2a)}
-    .card:nth-child(3){background:linear-gradient(150deg,#1d3340,#0d1b26)}
-    .card .tag{font-size:11px;text-transform:uppercase;letter-spacing:.18em;color:var(--gold);margin-bottom:12px}
-    .card h3{font-size:30px;line-height:1.1;margin-bottom:12px}
-    .card p{color:#b9c3d1;font-size:13px;margin:0}
-    .join{padding:92px 0;text-align:center;background:radial-gradient(ellipse 70% 90% at center top,#28344c 0,#121c2c 66%,#0c1421)}
-    .join h2{font-size:clamp(36px,5vw,60px);line-height:1.13;margin:14px 0}
-    .join p{color:#cad1db;max-width:620px;margin:0 auto 28px}
-    .author{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(30px,8vw,110px)}
-    .author-photo{max-width:450px;aspect-ratio:1;background:linear-gradient(135deg,#263349,#0e1725);border-radius:5px;overflow:hidden;position:relative}
-    .author-photo img{display:block;width:100%;height:100%;object-fit:cover}
-    .author-photo:after{content:"";position:absolute;inset:0;border:1px solid var(--line);pointer-events:none}
-    .author h2{font-size:clamp(38px,4vw,56px)}
-    .author p{color:#bdc6d3}
-    footer{border-top:1px solid var(--line);padding:35px 0 25px;background:#070c13}
-    .foot{display:flex;justify-content:space-between;gap:24px;align-items:center;flex-wrap:wrap}
-    .foot-links{display:flex;gap:21px;flex-wrap:wrap;color:#c8c8ca;font-size:12px}
-    .legal{color:#7f8997;font-size:11px;margin-top:22px}
-    .reveal{opacity:0;transform:translateY(13px);transition:opacity .65s,transform .65s}
-    .reveal.visible{opacity:1;transform:none}
-    @media(max-width:850px){.hero-grid,.feature-grid,.synopsis,.author{grid-template-columns:1fr}.hero-copy{order:0}.hero-art{order:1;max-width:350px;margin-top:30px}.story-strip{grid-template-columns:repeat(2,1fr)}.story-strip span:nth-child(3){border-left:0}.cards{grid-template-columns:1fr}.card{min-height:190px}.feature-grid{text-align:center}.feature p{margin-left:auto;margin-right:auto}.section{padding:70px 0}.author-photo{max-width:420px}.nav{gap:15px}}
-    @media(max-width:580px){.wrap{width:min(100% - 32px,1180px)}.topbar .wrap{min-height:70px}.mark{width:26px;height:26px;font-size:19px}.wordmark{font-size:15px}.nav a:not(.nav-accent){display:none}.nav .nav-accent{padding:7px 10px;font-size:11px}.hero{padding-top:54px;padding-bottom:56px}.hero h1{font-size:clamp(46px,12vw,66px)}.intro{font-size:17px}.story-strip span{font-size:10px}.actions .btn{width:100%}.section-head h2{font-size:38px}.synopsis .quote{font-size:32px}.foot{align-items:flex-start;flex-direction:column}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.btn{transition:none}}
-  </style>
-</head>
-<body>
-  <header class="topbar">
-    <div class="wrap">
-      <a class="wordmark" href="#inicio" aria-label="Dimensões Infinitas, voltar ao início"><span class="mark" aria-hidden="true">✧</span>Dimensões<br>Infinitas</a>
-      <nav class="nav" aria-label="Navegação principal">
-        <a href="#livro">O livro</a><a href="#ciclo">O ciclo</a><a href="#universos">Universos</a><a href="#autor">O autor</a>
-        <a class="nav-accent" href="#acompanhe">Acompanhe</a>
-      </nav>
-    </div>
-  </header>
-  <main id="inicio">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="wrap hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Fantasia épica brasileira &nbsp;·&nbsp; Ciclo de Jesed</p>
-          <h1 id="hero-title">Há mundos que <em>não deveriam cair.</em></h1>
-          <p class="intro">Eles construíram uma civilização acima do mundo. <strong>Até o céu começar a cair.</strong></p>
-          <p class="summary">Conheça <em>Ruínas dos Céus</em>, uma história sobre fé, escolhas e o que acontece quando as certezas de uma civilização começam a desmoronar.</p>
-          <div class="actions">
-            <a class="btn btn-primary" href="#livro">Conhecer o livro <span aria-hidden="true">↗</span></a>
-            <a class="btn btn-outline" href="#acompanhe">Acompanhar lançamento</a>
-          </div>
-          <p class="release-note">Em preparação · Kindle e edição impressa previstos</p>
-        </div>
-        <div class="hero-art reveal">
-          <figure class="book-figure">
-            <img class="cover" src="/assets/ruinas-dos-ceus-capa.webp" alt="Capa de Ruínas dos Céus, romance de Guilherme S. L. Anjos" width="500" height="750" fetchpriority="high" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-            <div class="cover-fallback" aria-label="Ruínas dos Céus"><span>CICLO DE JESED</span><strong>RUÍNAS<br>DOS CÉUS</strong><span>GUILHERME S. L. ANJOS</span></div>
-            <figcaption>Ruínas dos Céus · Guilherme S. L. Anjos</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-    <div class="fine-divider"></div>
-    <div class="wrap story-strip" aria-label="Gêneros de Dimensões Infinitas">
-      <span>Fantasia épica</span><span>Ficção científica</span><span>Mistério</span><span>Terror sobrenatural</span>
-    </div>
-    <div class="fine-divider"></div>
-    <section id="livro" class="section" aria-labelledby="book-title">
-      <div class="wrap">
-        <div class="section-head reveal">
-          <p class="eyebrow">Seu próximo mundo começa aqui</p>
-          <h2 id="book-title">Ruínas dos Céus</h2>
-          <p>Uma civilização suspensa entre a fé e o desconhecido. Um mundo cuja estabilidade já não parece tão eterna.</p>
-        </div>
-        <div class="synopsis">
-          <p class="quote reveal">“Etérea sempre viveu acima do mundo. E seu povo acredita que assim será para sempre.”</p>
-          <div class="copy reveal">
-            <p>Sustentada pelo Sopro e pela fé na Leveza, a civilização aprendeu a desprezar o Peso e tudo o que existe abaixo das nuvens. Mas os ventos estão mudando.</p>
-            <p>Jokara percebe os primeiros sinais de que algo está errado. Enquanto antigas advertências voltam a fazer sentido, aqueles que deveriam ouvi-la se agarram à certeza de que Etérea jamais cairá.</p>
-            <p>Só que o céu não está tão seguro quanto parece.</p>
-            <p>Quando a queda se torna inevitável, não é apenas uma civilização que começa a desmoronar. São as crenças, as certezas e o próprio sentido de pertencimento de um povo.</p>
-            <p>Para Jokara, o maior desafio será descobrir o que resta de sua identidade quando o mundo em que aprendeu a viver deixa de existir.</p>
-            <p class="release-note">Amostra gratuita e links de compra serão disponibilizados após a revisão e preparação editorial.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="ciclo" class="section feature" aria-labelledby="cycle-title">
-      <div class="wrap feature-grid">
-        <div class="book-medallion reveal" aria-hidden="true">✧</div>
-        <div class="reveal">
-          <p class="eyebrow">O Ciclo de Jesed</p>
-          <h2 id="cycle-title">Cinco histórias.<br><span>Um único ciclo.</span><br>Sem início e sem fim.</h2>
-          <p>Uma pentalogia circular formada por cinco perspectivas conectadas. Cada volume oferece um caminho de entrada, e juntos revelam diferentes faces de uma história maior.</p>
-          <p>Não existe uma única ordem para descobrir o ciclo. Existem caminhos que se encontram.</p>
-          <a class="smalllink" href="#universos">Conheça os mundos do autor ↗</a>
-        </div>
-      </div>
-    </section>
-    <section id="universos" class="section universe" aria-labelledby="worlds-title">
-      <div class="wrap">
-        <div class="section-head reveal">
-          <p class="eyebrow">Para além das nuvens</p>
-          <h2 id="worlds-title">Outras histórias.<br>Outras possibilidades.</h2>
-          <p>Dimensões Infinitas reúne narrativas de diferentes gêneros, todas criadas por Guilherme S. L. Anjos. Conheça algumas das séries que estão sendo preparadas.</p>
-        </div>
-        <div class="cards">
-          <article class="card reveal"><div class="tag">Ficção científica · Em desenvolvimento</div><h3>Spacetheft</h3><p>Pirataria espacial, conspirações e escolhas difíceis em meio ao desconhecido.</p></article>
-          <article class="card reveal"><div class="tag">Sobrenatural · Em revisão</div><h3>Diário Sobrenatural</h3><p>Drama, transformação pessoal e acontecimentos que desafiam o mundo conhecido.</p></article>
-          <article class="card reveal"><div class="tag">Fantasia dimensional · Em revisão</div><h3>Viajantes Dimensionais</h3><p>Uma aventura entre realidades, poderes inesperados e um mundo mágico paralelo.</p></article>
-        </div>
-      </div>
-    </section>
-    <section id="acompanhe" class="join" aria-labelledby="join-title">
-      <div class="wrap reveal">
-        <p class="eyebrow">O próximo capítulo está a caminho</p>
-        <h2 id="join-title">A história está apenas começando.</h2>
-        <p>Estamos preparando o lançamento de <em>Ruínas dos Céus</em>. Acompanhe notícias, bastidores e futuras oportunidades de ler um capítulo gratuito pelo perfil oficial do autor.</p>
-        <a class="btn btn-primary" href="https://www.instagram.com/guilhermeslanjos/" target="_blank" rel="noopener noreferrer">Acompanhar no Instagram ↗</a>
-        <p class="release-note">A inscrição por e-mail será disponibilizada quando o sistema de newsletter estiver pronto.</p>
-      </div>
-    </section>
-    <section id="autor" class="section" aria-labelledby="author-title">
-      <div class="wrap author">
-        <div class="author-photo reveal">
-          <img src="/assets/dimensoes-infinitas-logo.webp" alt="Logotipo oficial de Dimensões Infinitas" style="object-fit:contain;padding:12%;opacity:.9" loading="lazy" onerror="this.style.display='none'">
-        </div>
-        <div class="reveal">
-          <p class="eyebrow">Por trás das histórias</p>
-          <h2 id="author-title">Guilherme S. L. Anjos</h2>
-          <p>Escritor brasileiro e criador de Dimensões Infinitas. Suas histórias atravessam fantasia épica, ficção científica, mistério e terror sobrenatural, sempre acompanhando os personagens, suas escolhas e as consequências que deixam pelo caminho.</p>
-          <p>Este é o espaço para acompanhar os lançamentos, conhecer novas obras e descobrir por onde começar.</p>
-          <a class="smalllink" href="https://www.instagram.com/guilhermeslanjos/" target="_blank" rel="noopener noreferrer">Conheça o autor no Instagram ↗</a>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <div class="wrap">
-      <div class="foot">
-        <span class="wordmark" style="font-size:16px"><span class="mark" aria-hidden="true">✧</span>Dimensões Infinitas</span>
-        <div class="foot-links">
-          <a href="#inicio">Início</a><a href="#livro">Ruínas dos Céus</a><a href="#ciclo">Ciclo de Jesed</a><a href="https://www.instagram.com/guilhermeslanjos/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
-        </div>
-      </div>
-      <p class="legal">© <span id="year">2026</span> Guilherme S. L. Anjos. Obras e imagens protegidas. Site em fase de lançamento; newsletter e vendas em preparação.</p>
-    </div>
-  </footer>
-  <script>
-    document.getElementById('year').textContent=new Date().getFullYear();
-    if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
-      const obs=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');obs.unobserve(entry.target)}})},{threshold:.08});
-      document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
-    } else document.querySelectorAll('.reveal').forEach(el=>el.classList.add('visible'));
-  </script>
-</body>
-</html>
+<!doctype html><html lang="pt-BR"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#09101c">
+<meta name="description" content="Uma civilização flutua sobre o mundo. Até o céu começar a cair. Conheça Ruínas dos Céus e leia o primeiro capítulo gratuitamente.">
+<link rel="canonical" href="https://dimensoesinfinitas.com/">
+<meta property="og:type" content="website"><meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Dimensões Infinitas | Ruínas dos Céus, fantasia épica de Guilherme S. L. Anjos"><meta property="og:description" content="Uma civilização flutua sobre o mundo. Até o céu começar a cair. Conheça Ruínas dos Céus e leia o primeiro capítulo gratuitamente.">
+<meta property="og:url" content="https://dimensoesinfinitas.com/">
+<meta property="og:image" content="https://dimensoesinfinitas.com/assets/ruinas-dos-ceus-capa.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/styles.css?v=20261023c">
+<title>Dimensões Infinitas | Ruínas dos Céus, fantasia épica de Guilherme S. L. Anjos</title></head><body><a class="skip" href="#conteudo">Pular para o conteúdo</a><header class="sitehead"><div class="container"><a class="brand" href="/" aria-label="Dimensões Infinitas, página inicial"><img src="/assets/dimensoes-infinitas-selo-n-branco.png" width="48" height="48" alt="" loading="eager"><img class="brand-logo" src="/assets/dimensoes-infinitas-logo-branco.png" alt="Dimensões Infinitas" width="220" height="39"></a>
+<nav aria-label="Navegação principal"><a href="/ciclo-de-jesed/ruinas-dos-ceus/">O livro</a><a href="#ciclo">O ciclo</a><a href="#autor">O autor</a><a class="mini-cta" href="/ciclo-de-jesed/ruinas-dos-ceus/ler/">Ler grátis</a></nav></div></header>
+<main id="conteudo">
+<section class="hero"><div class="container hero-grid">
+<div class="hero-copy"><p class="eyebrow">Fantasia épica brasileira · Ciclo de Jesed</p>
+<h1>Uma civilização acima do mundo. <em>O céu está prestes a cair.</em></h1>
+<p class="sublead">Em Etérea, o vento sustenta ilhas e certezas. Jokara é uma das poucas pessoas dispostas a questioná-las.</p>
+<p class="muted">Conheça <strong>Ruínas dos Céus</strong>, o primeiro lançamento do universo literário Dimensões Infinitas. Fé, medo, escolhas e o peso de uma verdade que ninguém quer escutar.</p>
+<div class="actions"><a class="btn primary" href="/ciclo-de-jesed/ruinas-dos-ceus/ler/">Ler o primeiro capítulo grátis →</a><a class="btn dark" href="/ciclo-de-jesed/ruinas-dos-ceus/">Conhecer o livro</a></div>
+<p class="fineprint">Leitura gratuita, sem cadastro · Livro em preparação · Kindle e edição impressa previstos</p></div>
+<figure class="hero-cover"><img src="/assets/ruinas-dos-ceus-capa.webp" width="500" height="750" alt="Capa de Ruínas dos Céus, romance de Guilherme S. L. Anjos" fetchpriority="high"><figcaption>Ruínas dos Céus · Guilherme S. L. Anjos</figcaption></figure></div></section>
+<div class="container metrics-strip"><span>Um mundo suspenso</span><span>Uma verdade incômoda</span><span>Uma queda anunciada</span></div>
+<section class="section" id="livro"><div class="container section-grid">
+<div><p class="eyebrow">A história em destaque</p><h2>O que acontece quando o impossível começa a acontecer?</h2>
+<p class="sublead">Os sinos já não soam como antes. Os ventos estão mudando. Em Etérea, questionar pode ser mais perigoso do que acreditar.</p><p class="muted">Uma fantasia centrada em personagens, crenças e decisões humanas diante de um mundo extraordinário.</p>
+<div class="actions"><a class="btn primary" href="/ciclo-de-jesed/ruinas-dos-ceus/">Descobrir Ruínas dos Céus →</a></div></div>
+<div class="panel"><p class="eyebrow">Uma primeira página</p><div class="chapter-tease"><p>Esta história não começa com uma guerra, nem com um herói. Começa com o vento.</p></div>
+<p class="small">Abertura do Capítulo 1, “O Sopro de Etérea”.</p><a class="btn sm" href="/ciclo-de-jesed/ruinas-dos-ceus/ler/">Começar a leitura grátis →</a></div>
+</div></section>
+<section class="email-section" id="acompanhar" aria-labelledby="email-title-acompanhar"><div class="container">
+<div class="email-card"><p class="eyebrow">O próximo sopro</p><h2 id="email-title-acompanhar">Receba o aviso quando Ruínas dos Céus chegar.</h2>
+<p>Receba o aviso de lançamento e, ocasionalmente, novidades sobre meus livros e bastidores da criação. Nada de mensagens diárias.</p>
+<form class="newsletter-form email-form" novalidate><div class="email-row">
+<label class="skip" for="email-acompanhar">Seu e-mail</label><input type="email" id="email-acompanhar" name="email" required autocomplete="email" placeholder="Seu melhor e-mail" maxlength="254" aria-label="Endereço de e-mail">
+<button class="btn primary" type="submit">Quero receber o aviso ↗</button></div>
+<div style="position:absolute;left:-9999px" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+<label class="consent"><input type="checkbox" name="consent" required><span>Concordo em receber e-mails de <strong>Guilherme S. L. Anjos / Dimensões Infinitas</strong> com avisos de lançamento e novidades literárias. Posso cancelar quando quiser. <a href="/privacidade/" target="_blank" rel="noopener">Política de privacidade</a>.</span></label>
+<p class="form-status" role="status" aria-live="polite"></p></form>
+<p class="micro">Após enviar, você deverá confirmar a inscrição pelo e-mail recebido. O capítulo gratuito é livre e não exige cadastro.</p></div></div></section>
+<section class="section" id="ciclo"><div class="container section-grid">
+<div><p class="eyebrow">A obra que conecta histórias</p><h2>Cinco histórias.<br><em>Um único ciclo.</em><br>Sem início e sem fim.</h2>
+<p class="muted">O Ciclo de Jesed reúne cinco narrativas conectadas, cada uma oferecendo uma perspectiva diferente. A circularidade é parte da experiência, não a ausência de conclusão em cada livro.</p>
+<p class="muted"><strong>Ruínas dos Céus</strong> será o primeiro volume publicado e uma porta para entrar nesse universo.</p><a class="btn dark" href="/ciclo-de-jesed/ruinas-dos-ceus/#ciclo">Como funciona o Ciclo →</a></div>
+<div class="panel"><span class="eyebrow">Para começar agora</span><h3>O céu de Etérea</h3><p>Você não precisa conhecer as outras séries, nem estudar mapas ou cronologias antes de abrir o livro.</p>
+<a class="btn primary" href="/ciclo-de-jesed/ruinas-dos-ceus/ler/">Ler o Capítulo 1 →</a></div></div></section>
+<section class="section highlight"><div class="container"><div class="section-head"><p class="eyebrow">Para além de Etérea</p><h2>Dimensões Infinitas é maior do que uma história.</h2>
+<p>Outras séries também fazem parte do projeto, mas o convite de hoje é simples: descobrir se Ruínas dos Céus é a sua próxima leitura.</p></div>
+<div class="cards"><article class="card"><h3>Spacetheft</h3><p>Ficção científica, pirataria espacial e dilemas morais. Em preparação.</p></article>
+<article class="card"><h3>Diário Sobrenatural</h3><p>Drama e acontecimentos sobrenaturais. Em preparação.</p></article>
+<article class="card"><h3>Viajantes Dimensionais</h3><p>Aventura e realidades paralelas. Em preparação.</p></article></div></div></section>
+<section class="section" id="autor"><div class="container author-grid"><div class="author-stamp"><img src="/assets/guilherme-s-l-anjos-branco.png" alt="Assinatura oficial Guilherme S. L. Anjos" loading="lazy"></div>
+<div><p class="eyebrow">Quem está por trás das histórias</p><h2>Guilherme S. L. Anjos</h2>
+<p class="muted">Sou um escritor brasileiro e criador de Dimensões Infinitas. Escrevo histórias interligadas de fantasia, ficção científica, mistério e terror, sempre interessado nas escolhas que transformam pessoas e mundos.</p>
+<p class="muted">Ruínas dos Céus é uma das portas para esse universo.</p><a class="btn dark" href="https://www.instagram.com/guilhermeslanjos/" target="_blank" rel="noopener noreferrer">Conheça meu Instagram ↗</a></div></div></section>
+<section class="closing"><div class="container narrow"><p class="eyebrow">Sua próxima história começa no vento</p><h2>Você leria um livro sobre um mundo que aprendeu a nunca cair?</h2><div class="actions"><a class="btn primary" href="/ciclo-de-jesed/ruinas-dos-ceus/ler/">Ler o capítulo gratuito →</a><a class="btn dark" href="#acompanhar">Receber o aviso de lançamento</a></div></div></section>
+</main><footer class="sitefoot"><div class="container"><span>© <span class="current-year">2026</span> Guilherme S. L. Anjos · Dimensões Infinitas</span>
+<div class="links"><a href="/">Página inicial</a><a href="/ciclo-de-jesed/ruinas-dos-ceus/">Ruínas dos Céus</a><a href="/privacidade/">Privacidade</a><a href="https://www.instagram.com/guilhermeslanjos/" rel="noopener noreferrer" target="_blank">Instagram ↗</a></div></div></footer><script defer src="/app.js?v=20261023c"></script><script>document.querySelectorAll('.current-year').forEach(el=>el.textContent=new Date().getFullYear());</script></body></html>
