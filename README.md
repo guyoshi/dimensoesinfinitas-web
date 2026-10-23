@@ -1,6 +1,6 @@
 # Dimensões Infinitas — site comercial oficial
 
-**Atualizado 23/10/2026:** home reposicionada para conversão em leitura, landing de *Ruínas dos Céus*, leitor gratuito do Capítulo 1 com modo imersivo e infraestrutura preparada para newsletter double opt-in. **A publicação real do código no Cloudflare e a integração Brevo não foram verificadas.**
+**Atualizado 23/10/2026 (revisão mobile/contraste):** home e landing comercial agora usam fundo creme editorial, tipografia escura e azul profundo nas chamadas; reorganizadas para uma razão diferente por bloco, com até dois CTAs de leitura por página, além do formulário. Capa centralizada e enquadrada no celular. Selo dourado oficial como favicon. Leitor gratuito do Capítulo 1 agora inicia em sépia, com opções claro/escuro. **A publicação real do código no Cloudflare e a integração Brevo não foram verificadas.**
 
 ## Objetivo
 Pré-lançamento: atrair leitores brasileiros de fantasia épica adulta, oferecer leitura gratuita do Capítulo 1 sem cadastro e, opcionalmente, formar uma lista de e-mails consentida e confirmada para o anúncio da publicação. No lançamento, transformar o funil em cliques e **vendas reais** Kindle/KDP e Bok2, sem prometer compra antes de links ativos. Longo prazo: marca Dimensões Infinitas e demais séries.
@@ -39,3 +39,8 @@ Cloudflare Workers com static assets em `./public`, Worker `src/index.js` exclus
 Auditoria detalhada de blocos, critérios de amostra, comparações e backlog: [docs/AUDITORIA_CONVERSAO_RUINAS_2026-10-23.md](docs/AUDITORIA_CONVERSAO_RUINAS_2026-10-23.md).
 
 Documentos anteriores mantidos: `docs/BENCHMARK_10_AUTORES_INDEPENDENTES_E_CROWDFUNDING.md`, `docs/BENCHMARK_10_HOMES_AUTORES_E_WIREFRAME.md`, `docs/IMPLEMENTACAO.md`, `docs/ARQUITETURA.md`. As pesquisas documentam modelos e não comprovam taxas de conversão dos concorrentes.
+
+## Revisão de layout e integração
+- [Auditoria estratégica + mobile](docs/AUDITORIA_DESIGN_CONVERSAO_MOBILE_20261023.md): motivos para blocos, cor clara, correção da capa e testes pendentes.
+- [Ativação Brevo + Cloudflare passo a passo](docs/GUIA_BREVO_CLOUDFLARE.md): conta, domínio, remetente, lista, template DOI, API key, segredos, testes e automação de boas-vindas.
+- A publicação Cloudflare requer verificar o deploy efetivo; atualização no GitHub não garante publicação por si só. Se o usuário observa as alterações no domínio, o deploy ocorreu para esses arquivos específicos, mas isso não comprova a API da newsletter ou alterações posteriores.

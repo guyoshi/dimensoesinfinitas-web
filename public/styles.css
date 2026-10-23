@@ -95,3 +95,162 @@ body.reader-page[data-reading-theme=light]{--read-bg:#fff;--read-ink:#20252d;--r
 .author-mini p{color:#d0d6e0}
 @media(max-width:830px){.author-portrait{width:min(280px,100%);justify-self:start}.author-mini .author-grid{grid-template-columns:1fr}}
 @media(max-width:560px){.author-portrait{width:min(250px,100%)}.author-mini .author-grid{gap:25px}}
+
+
+/* Editorial claro 23/10/2026. Conversão sem ruído; leitura e marca seguem independentes. */
+body.marketing-page{
+  color-scheme:light;
+  --bg:#f7f3eb;--bg2:#ede8de;--panel:#fffdf8;
+  --text:#1d2d3c;--muted:#506070;--gold:#8b5e29;--gold2:#704819;
+  --line:rgba(38,49,65,.15);
+  background:#f7f3eb;color:#1d2d3c;
+}
+body.marketing-page:before{
+  height:720px;background:radial-gradient(ellipse 80% 70% at 74% 7%,rgba(215,194,163,.26),transparent 75%);
+}
+body.marketing-page .container{width:min(1110px,calc(100% - 44px))}
+body.marketing-page h1,body.marketing-page h2,body.marketing-page h3{color:#1b2837;letter-spacing:-.035em;}
+body.marketing-page h1{font-size:clamp(42px,5.5vw,70px);line-height:1.09;margin-bottom:22px}
+body.marketing-page h1 em,body.marketing-page h2 em{color:#93612c}
+body.marketing-page h2{font-size:clamp(33px,3.8vw,51px);line-height:1.15;margin-bottom:20px}
+body.marketing-page h3{font-size:clamp(24px,2.5vw,32px)}
+body.marketing-page p{color:#39475a}
+body.marketing-page .sublead{color:#253549;font-size:clamp(17px,1.8vw,20px)}
+body.marketing-page .muted{color:#586475}
+body.marketing-page .fineprint,body.marketing-page .micro{color:#5a6572}
+body.marketing-page .sitehead{background:rgba(251,248,242,.97);border-bottom:1px solid rgba(47,56,68,.13);box-shadow:0 5px 20px rgba(33,43,55,.035);backdrop-filter:blur(16px)}
+body.marketing-page .sitehead .container{min-height:72px}
+body.marketing-page .brand{flex-shrink:0;gap:4px}
+body.marketing-page .brand>img:first-child{width:40px;height:40px}
+body.marketing-page .brand .brand-logo{width:177px;height:65px;max-width:none;object-fit:contain;object-position:left center}
+body.marketing-page .sitehead nav a{color:#384657;font-weight:600;font-size:13px}
+body.marketing-page .sitehead nav a:hover{color:#8b5e29}
+body.marketing-page .hero{padding:clamp(42px,6vw,78px) 0 78px;overflow:visible}
+body.marketing-page .hero-grid{grid-template-columns:minmax(0,1.13fr) minmax(0,.87fr);gap:clamp(34px,5vw,82px);align-items:center}
+body.marketing-page .hero-copy{max-width:650px}
+body.marketing-page .hero-copy .sublead{max-width:580px;margin-bottom:14px}
+body.marketing-page .hero-support{font-size:15px;max-width:565px}
+body.marketing-page .hero-cover{width:100%;max-width:405px;margin-inline:auto;isolation:isolate}
+body.marketing-page .hero-cover:before,
+body.marketing-page .hero-cover:after{display:none!important}
+body.marketing-page .cover-stage{
+  display:grid;place-items:center;max-width:100%;
+  padding:clamp(16px,3.2vw,30px);
+  background:linear-gradient(150deg,#e4d9c8,#ede5d9 62%,#f8f3e8);
+  border:1px solid rgba(126,92,60,.25);border-radius:12px;
+  box-shadow:0 19px 42px rgba(26,44,67,.12);
+}
+body.marketing-page .hero-cover img{
+  display:block;width:100%;height:auto;max-height:555px;
+  aspect-ratio:auto;object-fit:contain;object-position:center;
+  border-radius:3px;box-shadow:0 15px 28px rgba(10,28,54,.19);
+  background:transparent;
+}
+body.marketing-page .hero-cover figcaption{font-size:11px;letter-spacing:.045em;color:#66707a;margin-top:15px}
+body.marketing-page .hero .actions{margin:24px 0 10px}
+body.marketing-page .btn{border:1px solid #23364d;border-radius:5px;color:#23364d;background:transparent;min-height:48px;padding:12px 23px}
+body.marketing-page .btn:hover{background:#e6dfd3}
+body.marketing-page .btn.primary{color:#fff;background:#1c324b;border-color:#1c324b;box-shadow:0 7px 18px rgba(26,46,72,.14)}
+body.marketing-page .btn.primary:hover{background:#2b4b6c;border-color:#2b4b6c}
+body.marketing-page .section{padding:clamp(66px,7.5vw,100px) 0}
+body.marketing-page .section-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(35px,6vw,90px)}
+body.marketing-page .section-head{max-width:760px;margin-bottom:35px}
+body.marketing-page .section-head p{color:#596673}
+body.marketing-page .panel{border-radius:9px;background:#fffcf7;border-color:rgba(33,50,70,.14);box-shadow:0 14px 38px rgba(24,44,62,.045)}
+body.marketing-page .panel p{color:#4d5a68}
+body.marketing-page .story-quote{border-left:4px solid #b4874a;box-shadow:0 14px 28px rgba(25,43,63,.055)}
+body.marketing-page .story-quote blockquote{margin:0 0 20px;color:#28364a;font:clamp(25px,3vw,37px)/1.35 Georgia,serif;letter-spacing:-.025em}
+body.marketing-page .story-quote p{margin:0;font-size:13px}
+body.marketing-page .highlight{background:#f0e9df;border-top:1px solid #e0d7ca;border-bottom:1px solid #e0d7ca}
+body.marketing-page .theme-cards article{
+  min-height:0;padding:29px;display:flex;flex-direction:column;justify-content:flex-start;
+  background:#fffdf8;border:1px solid rgba(58,63,65,.15);box-shadow:0 5px 20px rgba(40,47,61,.03);
+}
+body.marketing-page .theme-cards article p{font-size:15px;color:#52606e}
+body.marketing-page .cycle-section{background:#fffdf9}
+body.marketing-page .cycle-card{padding:35px;border:1px solid #d7c5ac;border-radius:7px;background:#f5efe5}
+body.marketing-page .cycle-card p{margin:0}
+body.marketing-page .synopsis h3{margin-bottom:24px;border-bottom:1px solid #ded1c0;padding-bottom:12px}
+body.marketing-page .synopsis p{font-size:15px;line-height:1.8;margin-bottom:17px}
+body.marketing-page .email-section{
+  background:linear-gradient(115deg,#152a42,#243c55 75%,#2b4254);
+  padding:clamp(72px,8vw,110px) 0;
+}
+body.marketing-page .email-section h2{color:#fff8eb}
+body.marketing-page .email-section p,
+body.marketing-page .email-section .consent{color:#e3e8ec}
+body.marketing-page .email-section .micro{color:#cfd9e0}
+body.marketing-page .email-row input[type=email]{color:#192a41;background:#fff;border:1px solid #b2c2d1;min-height:51px}
+body.marketing-page .email-row .btn.primary{background:#f4d6a6;color:#18293c;border-color:#f4d6a6;box-shadow:none}
+body.marketing-page .email-row .btn.primary:hover{background:#fff0ce;border-color:#fff0ce}
+body.marketing-page .email-row .btn[disabled]{opacity:.6;cursor:not-allowed;transform:none}
+body.marketing-page .email-section .consent a{color:#ffe6bb}
+body.marketing-page .email-section .form-status{color:#fff1cb}
+body.marketing-page .email-section .form-status[role=alert]{color:#ffd0bd}
+body.marketing-page .author-section{background:#f9f6f0}
+body.marketing-page .author-grid{grid-template-columns:260px minmax(0,1fr);gap:clamp(32px,5vw,78px)}
+body.marketing-page .author-portrait{max-width:260px;justify-self:center}
+body.marketing-page .author-portrait img{aspect-ratio:1;object-fit:cover;object-position:center}
+body.marketing-page .author-portrait figcaption{color:#596675}
+body.marketing-page .author-signature{width:181px;height:61px;max-width:100%;object-fit:contain;object-position:left center}
+body.marketing-page .faq-section{background:#fbf8f3}
+body.marketing-page .faq{border-color:#d8d4ce}
+body.marketing-page .faq summary{font-size:17px;color:#233248;padding:6px 0;line-height:1.55}
+body.marketing-page .faq p{color:#4a5764}
+body.marketing-page .closing{text-align:center;background:linear-gradient(135deg,#ece3d7,#f7f0e6);border-top:1px solid #e1d5c4;padding:clamp(66px,7.5vw,100px) 0}
+body.marketing-page .closing p{max-width:620px;margin:0 auto 24px}
+body.marketing-page .closing .fineprint{margin-top:14px;font-size:12px}
+body.marketing-page .sitefoot{border-color:#2b3e50;background:#142237;color:#d7e0e8}
+body.marketing-page .sitefoot .container{color:#d7e0e8}
+body.marketing-page .sitefoot a:hover{color:#fff}
+body.marketing-page .email-form .consent{margin-top:16px}
+/* Rebalance mobile: copy/CTA first, cover optically centered, no rotated background ornament. */
+@media(max-width:850px){
+  body.marketing-page .hero-grid,
+  body.marketing-page .section-grid,
+  body.marketing-page .author-grid{grid-template-columns:1fr}
+  body.marketing-page .hero-grid{gap:26px}
+  body.marketing-page .hero-copy{order:0}
+  body.marketing-page .hero-cover{order:1;max-width:305px}
+  body.marketing-page .hero{padding:42px 0 55px}
+  body.marketing-page .hero-cover .cover-stage{padding:18px}
+  body.marketing-page .section-grid{gap:28px}
+  body.marketing-page .theme-cards{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+  body.marketing-page .theme-cards article{padding:22px}
+  body.marketing-page .author-grid{gap:26px}
+  body.marketing-page .author-portrait{justify-self:start;max-width:220px}
+}
+@media(max-width:680px){
+  body.marketing-page .container{width:min(100% - 32px,1110px)}
+  body.marketing-page .sitehead .container{min-height:65px}
+  body.marketing-page .brand>img:first-child{width:34px;height:34px}
+  body.marketing-page .brand .brand-logo{width:148px;height:53px}
+  body.marketing-page .sitehead nav{display:none}
+  body.marketing-page .hero{padding:32px 0 45px}
+  body.marketing-page h1{font-size:clamp(35px,9vw,45px);line-height:1.12;margin-bottom:17px}
+  body.marketing-page h2{font-size:clamp(30px,7.7vw,39px)}
+  body.marketing-page .hero-copy .sublead{font-size:16px;line-height:1.55}
+  body.marketing-page .hero-support{font-size:14px}
+  body.marketing-page .hero .actions{margin:20px 0 10px}
+  body.marketing-page .hero-cover{width:100%;max-width:250px;justify-self:center;margin-inline:auto}
+  body.marketing-page .hero-cover .cover-stage{padding:15px}
+  body.marketing-page .hero-cover figcaption{font-size:10px;letter-spacing:0}
+  body.marketing-page .section{padding:57px 0}
+  body.marketing-page .theme-cards{grid-template-columns:1fr;gap:11px}
+  body.marketing-page .theme-cards article{padding:21px;gap:6px}
+  body.marketing-page .theme-cards article h3{font-size:24px;margin-bottom:4px}
+  body.marketing-page .theme-cards article p{font-size:14px}
+  body.marketing-page .panel{padding:25px}
+  body.marketing-page .cycle-card{padding:24px}
+  body.marketing-page .email-section{padding:62px 0}
+  body.marketing-page .email-row{flex-direction:column}
+  body.marketing-page .email-row button{width:100%}
+  body.marketing-page .email-form{margin-top:24px}
+  body.marketing-page .actions .btn{width:100%}
+  body.marketing-page .closing .btn{width:min(100%,360px)}
+  body.marketing-page .author-portrait{justify-self:center}
+}
+/* Default de leitura claro-sépia, sem retirar o modo escuro opcional. */
+body.reader-page{--read-bg:#f5f0e5;--read-ink:#302820;--read-ui:#eee4d2;--read-border:#c9bba4;color-scheme:light;background:#f5f0e5}
+body.reader-page[data-reading-theme="dark"]{color-scheme:dark;--read-bg:#0e1521;--read-ink:#eae9e5;--read-ui:#152235;--read-border:rgba(237,220,190,.22)}
+body.reader-page[data-reading-theme="light"]{color-scheme:light;--read-bg:#fff;--read-ink:#20252d;--read-ui:#f0f1f3;--read-border:#dadfe4}

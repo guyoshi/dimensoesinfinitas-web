@@ -20,3 +20,7 @@ coverage/
 Thumbs.db
 .vscode/
 .idea/
+
+# Variáveis locais do Cloudflare Workers (jamais versionar segredos)
+.dev.vars
+.dev.vars.*

@@ -1,5 +1,5 @@
 <!doctype html><html lang="pt-BR"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"><link rel="icon" type="image/png" sizes="any" href="/assets/dimensoes-infinitas-selo-n-dourado.png"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#0e1521">
 <meta name="description" content="Leia gratuitamente o Capítulo 1, O Sopro de Etérea, do romance Ruínas dos Céus de Guilherme S. L. Anjos. Com modos de leitura e tela cheia.">
 <meta name="robots" content="index,follow">
@@ -9,8 +9,8 @@
 <meta property="og:description" content="Conheça Etérea lendo o primeiro capítulo gratuitamente, sem cadastro.">
 <meta property="og:image" content="https://dimensoesinfinitas.com/assets/ruinas-dos-ceus-capa.webp">
 <title>O Sopro de Etérea | Capítulo 1 grátis | Ruínas dos Céus</title>
-<link rel="stylesheet" href="/styles.css?v=20261023c"></head>
-<body class="reader-page" data-reading-theme="dark">
+<link rel="stylesheet" href="/styles.css?v=20261023light2"></head>
+<body class="reader-page" data-reading-theme="paper">
 <a class="skip" href="#leitura">Pular para o capítulo</a>
 <header class="reading-bar" id="controls">
 <div class="read-controls"><a href="/ciclo-de-jesed/ruinas-dos-ceus/" aria-label="Voltar à página do livro">← Ruínas dos Céus</a>
@@ -26,7 +26,7 @@
 <div class="read-progress" id="progress" role="progressbar" aria-label="Progresso da leitura" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
 </header>
 <main id="leitura"><div class="reader-paper">
-<p class="reader-kicker">Dimensões Infinitas · Ciclo de Jesed · Ruínas dos Céus</p>
+
 <h1>Capítulo 1<br>O Sopro de Etérea</h1>
 <p class="reader-description">Por Guilherme S. L. Anjos · Aproximadamente 16 minutos de leitura · Amostra integral gratuita · Texto em revisão editorial.</p>
 <article class="reader-prose" id="chapter" aria-label="Texto integral do Capítulo 1">
@@ -121,7 +121,7 @@
 <p>Então, em algum lugar acima, ouviu o toque seco de uma pedra contra outra.</p>
 </article>
 <p class="read-note">Fim do primeiro capítulo de <em>Ruínas dos Céus</em>. A prévia reproduz o texto do manuscrito canônico atual, sujeito a revisão antes do lançamento.</p>
-<section class="read-end" aria-labelledby="end-title"><p class="eyebrow">Gostou de conhecer Etérea?</p>
+<section class="read-end" aria-labelledby="end-title">
 <h2 id="end-title">O próximo capítulo começa com uma pergunta.</h2>
 <p>Este foi só o primeiro contato com o mundo de Jokara. Receba um aviso quando o livro estiver disponível, ou volte à página para descobrir mais sobre a história. A inscrição é opcional.</p>
 <div class="actions" style="justify-content:center">
@@ -134,7 +134,7 @@
 (()=>{'use strict';
 const body=document.body,chapter=document.getElementById('chapter'),progress=document.getElementById('progress'),theme=document.getElementById('readingTheme'),full=document.getElementById('fullscreen'),label=document.getElementById('fullLabel'),invite=document.getElementById('readInvite');
 const key='di-ruinas-leitor-v1';
-let data={theme:'dark',size:20,dismissed:false};
+let data={theme:'paper',size:20,dismissed:false};
 try{data={...data,...JSON.parse(localStorage.getItem(key)||'{}')}}catch(e){}
 function persist(){try{localStorage.setItem(key,JSON.stringify(data))}catch(e){}}
 function apply(){body.dataset.readingTheme=['dark','paper','light'].includes(data.theme)?data.theme:'dark';theme.value=body.dataset.readingTheme;const size=Math.max(17,Math.min(28,Number(data.size)||20));data.size=size;chapter.style.setProperty('--font-size',size+'px');}
