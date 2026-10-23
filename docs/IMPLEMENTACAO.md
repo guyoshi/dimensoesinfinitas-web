@@ -1,5 +1,10 @@
 # Próximas etapas de implementação
 
+**Pesquisa mercadológica concluída para orientação inicial:** [BENCHMARK_10_CASOS_EDITORIAIS.md](BENCHMARK_10_CASOS_EDITORIAIS.md), com 2 projetos de resultados problemáticos, 2 êxitos excepcionais e 6 estratégias comprováveis de autores/editoras. Nenhum resultado dos casos foi atribuído exclusivamente ao site.
+
+**Decisão após benchmark:** preparar um site comercial leve com página direta de Ruínas, amostra gratuita sem cadastro obrigatório, inscrição consentida e links KDP/Bok2; preservar portal interativo separado, sem copiar spoilers nem construir checkout próprio.
+
+
 **Status geral: não iniciadas.** Este arquivo planeja tarefas, não afirma sua execução.
 
 ## Configuração de conta/repositório
