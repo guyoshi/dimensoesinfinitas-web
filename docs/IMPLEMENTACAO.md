@@ -5,7 +5,7 @@
 **Decisão após benchmark:** preparar um site comercial leve com página direta de Ruínas, amostra gratuita sem cadastro obrigatório, inscrição consentida e links KDP/Bok2; preservar portal interativo separado, sem copiar spoilers nem construir checkout próprio.
 
 
-**Status geral:** infraestrutura mínima de deploy preparada no GitHub; integração, publicação e domínio ainda não confirmados; site comercial ainda não construído.
+**Status geral (23/10/2026):** repositório e Cloudflare Workers configurados pelo autor; domínio customizado mostrado como Production. Home comercial implementada no commit `7df3bbf`; **publicação do novo commit ainda não validada**. Landing dedicada e mecanismos de conversão ainda pendentes.
 
 ## Configuração de conta/repositório
 - [x] Criar `guyoshi/dimensoesinfinitas-web` no GitHub com visibilidade pública (somente conteúdo aprovado).
@@ -36,13 +36,22 @@
 - [ ] Definir plataforma de newsletter, custos, consentimento e descadastro antes de integrar.
 
 ## Página comercial Ruínas dos Céus
-- [ ] Importar CAPA FRONTAL aprovada (não a montagem de frente/verso).
-- [ ] Copiar SINOPSE OFICIAL do dossiê de lançamento do livro.
+- [ ] **Trazer para este repositório a capa frontal OFICIAL anexada pelo autor**. A home usa provisoriamente imagem WebP pública do repositório `dimensoesinfinitassite`; confirmar se corresponde ao arquivo final recente e substituir por asset versionado localmente, sem dependência externa.
+- [x] Sinopse oficial reproduzida na home, mantendo a queda como premissa e omitindo sobrevivência na superfície.
 - [ ] Preparar capítulo gratuito revisado e acessível, sem capturar email obrigatoriamente.
-- [ ] Inserir marca de Ciclo de Jesed sem competir com o título.
+- [x] Marca de Ciclo de Jesed e slogan com hierarquia secundária.
 - [ ] Explicar pentalogia circular sem sugerir ausência de conclusão.
 - [ ] Criar newsletter consentida com descadastro e política de privacidade.
 - [ ] Adicionar links Kindle/Bok2 apenas quando ativos.
+
+## Home inicial (implementação)
+- [x] Layout editorial responsivo, navegação por âncoras, sem bibliotecas ou tracking invasivo.
+- [x] Premissa oficial de Ruínas e foco em descoberta da obra.
+- [x] Apresentação breve do Ciclo circular e de Spacetheft, Diário Sobrenatural e Viajantes Dimensionais com status honestos.
+- [x] CTA funcional para seção do livro e link real para Instagram do autor.
+- [ ] **Substituir bloco de imagem do autor pela foto oficial de Guilherme enviada na conversa**. A versão atual contém logo/arte de fallback; não declarar que seja retrato.
+- [ ] Confirmar build mais recente na Cloudflare e teste mobile/desktop.
+- [ ] Criar landing dedicada depois, com amostra gratuita revisada e newsletter real.
 
 ## Métricas e lançamento
 - [ ] Configurar GA4, Search Console e eventos `book_view`, `sample_open`, `newsletter_signup`, `kindle_click`, `bok2_click`.
@@ -52,5 +61,5 @@
 
 ## O que explicitamente NÃO fazer antes da implementação aprovada
 - Não criar homepage, HTML, CSS, JavaScript, formulários ou páginas de livros.
-- Não fazer deploy do repositório documental atual como se já fosse site, nem vincular DNS antes de haver uma versão funcional. Cloudflare Pages é a escolha proposta.
+- A versão funcional da home já foi enviada ao repositório; publicar apenas com consentimento e métricas corretas. Cloudflare Workers está configurado conforme fluxo adotado.
 - Não copiar o portal interativo ou documentação canônica para o repositório público.
