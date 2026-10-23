@@ -1,6 +1,6 @@
 # Próximas etapas de implementação
 
-**Pesquisa mercadológica concluída para orientação inicial:** [BENCHMARK_10_CASOS_EDITORIAIS.md](BENCHMARK_10_CASOS_EDITORIAIS.md), com 2 projetos de resultados problemáticos, 2 êxitos excepcionais e 6 estratégias comprováveis de autores/editoras. Nenhum resultado dos casos foi atribuído exclusivamente ao site.
+**PESQUISA PRIORITÁRIA, adequada ao porte do autor:** [BENCHMARK_10_AUTORES_INDEPENDENTES_E_CROWDFUNDING.md](BENCHMARK_10_AUTORES_INDEPENDENTES_E_CROWDFUNDING.md) (10 sites de escritores independentes, financiamento coletivo, plano de networking).\n\n**Pesquisa histórica secundária (escala grande, não comparação direta):** [BENCHMARK_10_CASOS_EDITORIAIS.md](BENCHMARK_10_CASOS_EDITORIAIS.md), com 2 projetos de resultados problemáticos, 2 êxitos excepcionais e 6 estratégias comprováveis de autores/editoras. Nenhum resultado dos casos foi atribuído exclusivamente ao site.
 
 **Decisão após benchmark:** preparar um site comercial leve com página direta de Ruínas, amostra gratuita sem cadastro obrigatório, inscrição consentida e links KDP/Bok2; preservar portal interativo separado, sem copiar spoilers nem construir checkout próprio.
 
