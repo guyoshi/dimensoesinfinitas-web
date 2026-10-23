@@ -5,7 +5,7 @@
 **Decisão após benchmark:** preparar um site comercial leve com página direta de Ruínas, amostra gratuita sem cadastro obrigatório, inscrição consentida e links KDP/Bok2; preservar portal interativo separado, sem copiar spoilers nem construir checkout próprio.
 
 
-**Status geral: não iniciadas.** Este arquivo planeja tarefas, não afirma sua execução.
+**Status geral:** infraestrutura mínima de deploy preparada no GitHub; integração, publicação e domínio ainda não confirmados; site comercial ainda não construído.
 
 ## Configuração de conta/repositório
 - [x] Criar `guyoshi/dimensoesinfinitas-web` no GitHub com visibilidade pública (somente conteúdo aprovado).
@@ -14,6 +14,12 @@
 - [ ] Habilitar alertas de dependências e verificação de segredos se disponibilizados pelo GitHub.
 - [x] Manter nenhuma chave/API em arquivos versionados.
 - [x] Definir **Cloudflare Pages** como hospedagem proposta, preservando o GitHub como fonte; ainda NÃO conectado nem com projeto criado.
+
+## Base Cloudflare Workers criada em 23/10/2026
+- [x] `wrangler.jsonc` com nome `dimensoesinfinitas-web` e ativos estáticos em `./public`.
+- [x] `public/index.html` provisório, sem formulário e com `noindex`.
+- [ ] Conectar via Workers Builds, branch `main`, build vazio, deploy `npx wrangler deploy`, sem usar token da Charm Host.
+- [ ] Validar primeiro em URL `*.workers.dev` antes de vincular domínio.
 
 ## Domínio e línguas
 - [x] Compra e gestão de `dimensoesinfinitas.com` no Cloudflare informadas pelo autor em 23/10/2026.
