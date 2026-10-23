@@ -18,6 +18,8 @@ Pré-lançamento: atrair leitores brasileiros de fantasia épica adulta, oferece
 - `/inscricao-confirmada/`: destino do double opt-in caso ativado.
 
 ## Assets e direitos
+Foto de autor: `public/assets/guilherme-s-l-anjos-autor.webp`, derivada da **metade direita** da imagem pessoal de apresentação enviada anteriormente pelo autor (retratro separado com estante de livros desfocada), otimizada para WebP. Integrada à home e ao bloco de apresentação autoral da landing. Assinatura oficial continua como elemento gráfico separado.
+
 Capa existente em `public/assets/ruinas-dos-ceus-capa.webp`. Logos, selo N e assinatura originais copiados do repositório canônico `98 - Assets Gerais/Logos/Dimensões Infinitas/` para `public/assets/`, sem refazer tipografia. Nome de autoria oficial: **Guilherme S. L. Anjos**.
 
 ## Técnica
