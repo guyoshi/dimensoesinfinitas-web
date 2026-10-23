@@ -1,6 +1,6 @@
 # Dimensões Infinitas — Site Comercial Oficial
 
-**Estado:** configuração inicial, sem site criado e sem publicação.
+**Estado:** base Cloudflare Workers criada; apenas página provisória de teste (noindex), sem site comercial ou deploy confirmado.
 
 Este repositório será a interface **pública e comercial** de Dimensões Infinitas, com páginas de apresentação de livros, captação consentida de leitores e ligações de compra. Ele não contém manuscritos, resumos completos de capítulos, spoilers, senhas nem documentação interna de cânone.
 
@@ -25,7 +25,7 @@ Nenhum conteúdo dos outros repositórios deve ser copiado automaticamente para 
 - **Privacidade:** cookies e analytics somente após a definição de consentimento aplicável; formulário com finalidade clara, política de privacidade e opção de descadastro.
 
 ## Estado técnico
-Ainda **não há** framework, HTML, CSS, JS, hospedagem, domínio, formulários, newsletter, analytics ou automações de publicação instalados. Essas decisões serão tomadas na etapa de implementação, para evitar dependências antecipadas.
+Existem `wrangler.jsonc` e `public/index.html` provisório. Ainda não há site comercial, newsletter, analytics, formulários, deploy confirmado ou domínio conectado. Essas decisões serão tomadas na etapa de implementação, para evitar dependências antecipadas.
 
 ## Objetivos de conversão oficiais (outubro de 2026)
 1. **Pré-lançamento:** apresentar Ruínas dos Céus e conseguir leitores interessados que optem por receber avisos (cadastro de newsletter, evento principal quando habilitado), mas sem bloquear a leitura gratuita do capítulo.
