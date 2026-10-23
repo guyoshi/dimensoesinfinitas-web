@@ -13,12 +13,21 @@
 - [ ] Configurar proteção da branch quando disponível.
 - [ ] Habilitar alertas de dependências e verificação de segredos se disponibilizados pelo GitHub.
 - [x] Manter nenhuma chave/API em arquivos versionados.
-- [ ] Escolher hospedagem apenas na etapa de criação do site.
+- [x] Definir **Cloudflare Pages** como hospedagem proposta, preservando o GitHub como fonte; ainda NÃO conectado nem com projeto criado.
 
 ## Domínio e línguas
-- [ ] Verificar disponibilidade e titularidade de `dimensoesinfinitas.com`.
+- [x] Compra e gestão de `dimensoesinfinitas.com` no Cloudflare informadas pelo autor em 23/10/2026.
+- [ ] Confirmar zona DNS, nameservers e estado do domínio diretamente no Cloudflare (sem inferência a partir de compra).
+- [ ] Autorizar a aplicação GitHub do Cloudflare Pages para **apenas** `guyoshi/dimensoesinfinitas-web` e conectar a branch `main`.
+- [ ] Confirmar build/artefatos e primeiro deploy em URL de prévia antes de vincular domínio.
+- [ ] Associar `dimensoesinfinitas.com` e `www` pelo painel Pages, sem registros DNS inventados; validar HTTPS e redirecionamento canônico.
 - [ ] Apontar DNS somente quando houver hospedagem funcionando.
 - [ ] Idioma inicial PT-BR; planejar `/en/` sem duplicar páginas vazias.
+
+## Objetivo comercial (acordado para orientar implementação)
+- [x] Decisão estratégica: **marca com home permanente + landing de Ruínas**, e não somente página de leads.
+- [x] Antes do lançamento, conversão principal: **interesse/leads consentidos**, apoiada em capítulo gratuito livre. Após lançamento, prioridade de conversão passa para **cliques de compra e vendas reais**.
+- [ ] Definir plataforma de newsletter, custos, consentimento e descadastro antes de integrar.
 
 ## Página comercial Ruínas dos Céus
 - [ ] Importar CAPA FRONTAL aprovada (não a montagem de frente/verso).
@@ -35,7 +44,7 @@
 - [ ] Auditar SEO, performance, acessibilidade e exposição de spoilers.
 - [ ] Registrar lançamento, páginas publicadas, primeiras métricas e ajustes no dossiê privado.
 
-## O que explicitamente NÃO fazer nesta etapa
+## O que explicitamente NÃO fazer antes da implementação aprovada
 - Não criar homepage, HTML, CSS, JavaScript, formulários ou páginas de livros.
-- Não publicar via GitHub Pages/Vercel.
+- Não fazer deploy do repositório documental atual como se já fosse site, nem vincular DNS antes de haver uma versão funcional. Cloudflare Pages é a escolha proposta.
 - Não copiar o portal interativo ou documentação canônica para o repositório público.
