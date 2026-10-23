@@ -16,7 +16,7 @@ Nenhum conteúdo dos outros repositórios deve ser copiado automaticamente para 
 
 ## Decisões definidas
 - **Público inicial:** Brasil, PT-BR.
-- **Domínio preferido:** `dimensoesinfinitas.com`, ainda não registrado/verificado.
+- **Domínio comprado pelo autor:** `dimensoesinfinitas.com`, gerenciado pelo Cloudflare (informação confirmada pelo autor em 23/10/2026). **Vinculação DNS/hospedagem ainda não configurada/verificada**.
 - **Inglês:** preparar estrutura futura em `/en/`; não criar páginas traduzidas vazias agora.
 - **Livro de destaque inicial:** *Ruínas dos Céus*.
 - **Ciclo de Jesed:** pentalogia circular, cinco portas de entrada. Slogan oficial: **“Cinco histórias. Um único ciclo. Sem início e sem fim.”**
@@ -26,6 +26,15 @@ Nenhum conteúdo dos outros repositórios deve ser copiado automaticamente para 
 
 ## Estado técnico
 Ainda **não há** framework, HTML, CSS, JS, hospedagem, domínio, formulários, newsletter, analytics ou automações de publicação instalados. Essas decisões serão tomadas na etapa de implementação, para evitar dependências antecipadas.
+
+## Objetivos de conversão oficiais (outubro de 2026)
+1. **Pré-lançamento:** apresentar Ruínas dos Céus e conseguir leitores interessados que optem por receber avisos (cadastro de newsletter, evento principal quando habilitado), mas sem bloquear a leitura gratuita do capítulo.
+2. **Lançamento:** vendas na Amazon KDP e Bok2 por links externos; monitorar cliques e vendas reais separadamente.
+3. **Longo prazo:** marca autoral e catálogo de séries do Dimensões Infinitas, reutilizando leitores consentidos para novos lançamentos.
+
+**Arquitetura escolhida:** página inicial de marca com lançamento em destaque + landing dedicada do livro em `/ciclo-de-jesed/ruinas-dos-ceus/`, direcionada por Instagram e criadores. Nunca substituir o site inteiro por uma única landing.
+
+**Hospedagem proposta:** Cloudflare Pages com integração ao repositório GitHub `guyoshi/dimensoesinfinitas-web` via branch `main`, prévias por PR e domínio personalizado só depois do primeiro deploy válido. Conexão à conta Cloudflare ainda pendente; nenhuma configuração DNS foi presumida.
 
 ## Próxima etapa (não executada)
 Ver `docs/IMPLEMENTACAO.md` e `docs/ARQUITETURA.md`.
