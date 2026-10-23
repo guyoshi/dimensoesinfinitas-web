@@ -1,6 +1,6 @@
 <!doctype html><html lang="pt-BR"><head>
 <meta charset="utf-8"><link rel="icon" type="image/png" sizes="any" href="/assets/dimensoes-infinitas-selo-n-dourado.png"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#0e1521">
+<meta name="theme-color" content="#eee4d2">
 <meta name="description" content="Leia gratuitamente o Capítulo 1, O Sopro de Etérea, do romance Ruínas dos Céus de Guilherme S. L. Anjos. Com modos de leitura e tela cheia.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://dimensoesinfinitas.com/ciclo-de-jesed/ruinas-dos-ceus/ler/">
@@ -137,7 +137,7 @@ const key='di-ruinas-leitor-v1';
 let data={theme:'paper',size:20,dismissed:false};
 try{data={...data,...JSON.parse(localStorage.getItem(key)||'{}')}}catch(e){}
 function persist(){try{localStorage.setItem(key,JSON.stringify(data))}catch(e){}}
-function apply(){body.dataset.readingTheme=['dark','paper','light'].includes(data.theme)?data.theme:'dark';theme.value=body.dataset.readingTheme;const size=Math.max(17,Math.min(28,Number(data.size)||20));data.size=size;chapter.style.setProperty('--font-size',size+'px');}
+function apply(){body.dataset.readingTheme=['dark','paper','light'].includes(data.theme)?data.theme:'dark';theme.value=body.dataset.readingTheme;const themeMeta=document.querySelector('meta[name="theme-color"]');if(themeMeta)themeMeta.content=body.dataset.readingTheme==='dark'?'#152235':body.dataset.readingTheme==='light'?'#f0f1f3':'#eee4d2';const size=Math.max(17,Math.min(28,Number(data.size)||20));data.size=size;chapter.style.setProperty('--font-size',size+'px');}
 apply();
 theme.addEventListener('change',()=>{data.theme=theme.value;apply();persist()});
 document.getElementById('reduce').addEventListener('click',()=>{data.size-=1;apply();persist()});
