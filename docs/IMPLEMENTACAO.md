@@ -36,7 +36,8 @@
 - [ ] Definir plataforma de newsletter, custos, consentimento e descadastro antes de integrar.
 
 ## Página comercial Ruínas dos Céus
-- [ ] **Trazer para este repositório a capa frontal OFICIAL anexada pelo autor**. A home usa provisoriamente imagem WebP pública do repositório `dimensoesinfinitassite`; confirmar se corresponde ao arquivo final recente e substituir por asset versionado localmente, sem dependência externa.
+- [x] **Capa WebP do site anterior copiada para este repositório** em `public/assets/ruinas-dos-ceus-capa.webp`, sem dependência de URL externa.
+- [ ] **Conferir a versão contra a última capa oficial anexada pelo autor na conversa**; se diferente, substituir o arquivo WebP pelo export da nova capa antes de iniciar campanha.
 - [x] Sinopse oficial reproduzida na home, mantendo a queda como premissa e omitindo sobrevivência na superfície.
 - [ ] Preparar capítulo gratuito revisado e acessível, sem capturar email obrigatoriamente.
 - [x] Marca de Ciclo de Jesed e slogan com hierarquia secundária.
@@ -49,8 +50,10 @@
 - [x] Premissa oficial de Ruínas e foco em descoberta da obra.
 - [x] Apresentação breve do Ciclo circular e de Spacetheft, Diário Sobrenatural e Viajantes Dimensionais com status honestos.
 - [x] CTA funcional para seção do livro e link real para Instagram do autor.
-- [ ] **Substituir bloco de imagem do autor pela foto oficial de Guilherme enviada na conversa**. A versão atual contém logo/arte de fallback; não declarar que seja retrato.
-- [ ] Confirmar build mais recente na Cloudflare e teste mobile/desktop.
+- [x] Logotipo histórico de Dimensões Infinitas copiado localmente para `public/assets/dimensoes-infinitas-logo.webp` e exibido na seção autor como imagem da marca.
+- [ ] **Aplicar a fotografia pessoal oficial do autor fornecida na conversa** na seção sobre o autor, após importar arquivo adequado para o repositório; atualmente essa seção exibe a marca, não a fotografia.
+- [x] Confirmada resposta HTML da nova home em `https://dimensoesinfinitas.com/` por leitura pública em 23/10/2026.
+- [ ] Testar carregamento VISUAL de imagem, mobile/desktop, contraste e acessibilidade; a leitura automatizada de URLs de imagem não expõe visualização de pixels.
 - [ ] Criar landing dedicada depois, com amostra gratuita revisada e newsletter real.
 
 ## Métricas e lançamento
