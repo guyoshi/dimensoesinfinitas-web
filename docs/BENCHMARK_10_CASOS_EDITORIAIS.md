@@ -1,4 +1,6 @@
-# Benchmark de 10 casos de sites e lançamento editorial
+# Benchmark histórico de grandes projetos (REFERÊNCIA SECUNDÁRIA)
+
+> **Substituído para decisões de lançamento por [BENCHMARK_10_AUTORES_INDEPENDENTES_E_CROWDFUNDING.md](BENCHMARK_10_AUTORES_INDEPENDENTES_E_CROWDFUNDING.md).** A solicitação do autor é comparar dez autores individuais que começaram sem grandes recursos, não grandes editoras ou franquias. Manter este documento apenas como contexto histórico.
 **Pesquisa em 23/10/2026.** Materiais rastreáveis por links abaixo. Mercado de aplicação: fantasia épica independente em português do Brasil; projeto *Ruínas dos Céus*, pentalogia circular *Ciclo de Jesed*. **Esta pesquisa não afirma que o site, sozinho, causou vendas.** Onde dados de vendas não são públicos, há apenas evidências de funcionamento da estratégia.
 
 ## Metodologia
