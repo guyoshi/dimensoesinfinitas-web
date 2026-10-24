@@ -292,3 +292,50 @@ body.marketing-page .beta-card .beta-note{font:17px/1.7 system-ui,-apple-system,
 body.marketing-page .beta-card footer span{line-height:1.5}
 @media(max-width:850px){body.marketing-page .eterea-wide{max-width:500px}body.marketing-page .cycle-figure{max-width:335px}body.marketing-page .beta-card{min-height:0}}
 @media(max-width:680px){body.marketing-page .eterea-wide{max-width:100%;width:min(100%,390px)}body.marketing-page .eterea-wide img{aspect-ratio:4/3}body.marketing-page .cycle-figure{max-width:300px}body.marketing-page .cycle-figure img{width:min(100%,250px)}body.marketing-page .beta-card{padding:26px 23px}body.marketing-page .author-signature{margin:25px auto 0}}
+
+/* Revisão editorial e usabilidade: outubro 2026 */
+body.marketing-page .sitehead .container{gap:16px}
+body.marketing-page .header-cta{white-space:nowrap;display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:10px 16px;border-radius:5px;background:#1c324b;color:#fff;font-size:13px;font-weight:750;text-align:center;box-shadow:0 4px 12px #15243a1a}
+body.marketing-page .header-cta:hover{background:#2b4b6c;color:#fff}
+body.marketing-page .discovery-cards{gap:18px}
+body.marketing-page .discovery-cards article{position:relative;min-height:325px;padding:34px 30px;background:linear-gradient(154deg,#fffdf9 0%,#f5ede2 100%);border:1px solid #dfcdb6;overflow:hidden;box-shadow:0 13px 28px rgba(42,49,58,.065);transition:transform .2s,box-shadow .2s}
+body.marketing-page .discovery-cards article:hover{transform:translateY(-4px);box-shadow:0 18px 34px rgba(42,49,58,.11)}
+body.marketing-page .discovery-cards article:after{content:"";position:absolute;bottom:0;left:0;width:100%;height:4px;background:linear-gradient(90deg,#ad7b45,#e6ceb0);opacity:.75}
+body.marketing-page .theme-index{font:700 11px/1.5 system-ui,sans-serif;letter-spacing:.16em;color:#92643a}
+body.marketing-page .theme-symbol{display:block;margin:16px 0 20px;font:54px/1 Georgia,serif;color:#9b774c}
+body.marketing-page .discovery-cards h3{font-size:clamp(25px,2.25vw,30px);margin-bottom:14px}
+body.marketing-page .discovery-cards p{font-size:15px;line-height:1.75;color:#4c5867}
+body.marketing-page .cycle-section p{font-size:16px;line-height:1.83}
+body.marketing-page .cycle-figure{max-width:365px}
+body.marketing-page .eterea-wide{width:min(100%,590px);max-width:590px}
+body.marketing-page .beta-card{border-color:#d8c2a4;min-height:315px}
+body.marketing-page .beta-card p{font-size:clamp(21px,2vw,26px)}
+body.marketing-page .author-signature{display:block;margin:24px auto 0;max-width:74%;object-position:center}
+body.marketing-page .sitefoot{padding:0;background:#13243a;color:#e2e6eb}
+body.marketing-page .sitefoot .footer-columns{display:grid;grid-template-columns:minmax(220px,1.5fr) repeat(3,minmax(120px,1fr));gap:35px;padding-top:56px;padding-bottom:48px;align-items:start}
+body.marketing-page .footer-brand img{max-width:175px;max-height:78px;object-fit:contain;object-position:left center;margin-bottom:10px}
+body.marketing-page .footer-brand strong{display:block;color:#fff3d9;font:24px/1.2 Georgia,serif;margin-bottom:12px}
+body.marketing-page .footer-brand p,body.marketing-page .footer-group p{color:#bac5d1;font-size:13px;line-height:1.8;max-width:270px}
+body.marketing-page .footer-group{display:flex;flex-direction:column;align-items:flex-start;gap:9px}
+body.marketing-page .footer-group h2{color:#f2d9ae;font:bold 12px/1.4 system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;margin:0 0 11px}
+body.marketing-page .footer-group a{font-size:13px;line-height:1.55;color:#dce4eb;text-decoration:none}
+body.marketing-page .footer-group a:hover{text-decoration:underline;color:#ffe8bb;text-underline-offset:4px}
+body.marketing-page .footer-bottom{padding-top:22px;padding-bottom:24px;border-top:1px solid #ffffff2a;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:#aebac7;font-size:11px;line-height:1.6}
+@media(max-width:960px){body.marketing-page .sitehead nav{display:none}body.marketing-page .footer-columns{grid-template-columns:repeat(2,minmax(0,1fr));gap:27px}}
+@media(max-width:680px){
+  body.marketing-page .sitehead .container{min-height:70px;gap:8px}
+  body.marketing-page .sitehead nav{display:none}
+  body.marketing-page .header-cta{display:inline-flex;min-height:43px;padding:9px 11px;font-size:11px;line-height:1.18;white-space:normal;max-width:134px}
+  body.marketing-page .brand{min-width:0;flex:1 1 auto}
+  body.marketing-page .brand>img:first-child{width:28px;height:28px}
+  body.marketing-page .brand .brand-logo{width:clamp(98px,31vw,145px);height:auto;max-height:48px;flex-shrink:1}
+  body.marketing-page .discovery-cards article{min-height:0;padding:25px 24px}
+  body.marketing-page .theme-symbol{font-size:44px;margin:10px 0 15px}
+  body.marketing-page .cycle-figure{max-width:300px}
+  body.marketing-page .eterea-wide{max-width:390px}
+  body.marketing-page .footer-columns{grid-template-columns:repeat(2,minmax(0,1fr));padding-top:43px;padding-bottom:30px;gap:27px 18px}
+  body.marketing-page .footer-brand{grid-column:1/-1}
+  body.marketing-page .footer-group a{font-size:12px}
+  body.marketing-page .footer-bottom{flex-direction:column;gap:7px}
+}
+@media(max-width:360px){body.marketing-page .brand .brand-logo{width:104px}body.marketing-page .header-cta{max-width:120px;font-size:10px}}
