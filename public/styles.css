@@ -254,3 +254,26 @@ body.marketing-page .email-form .consent{margin-top:16px}
 body.reader-page{--read-bg:#f5f0e5;--read-ink:#302820;--read-ui:#eee4d2;--read-border:#c9bba4;color-scheme:light;background:#f5f0e5}
 body.reader-page[data-reading-theme="dark"]{color-scheme:dark;--read-bg:#0e1521;--read-ink:#eae9e5;--read-ui:#152235;--read-border:rgba(237,220,190,.22)}
 body.reader-page[data-reading-theme="light"]{color-scheme:light;--read-bg:#fff;--read-ink:#20252d;--read-ui:#f0f1f3;--read-border:#dadfe4}
+
+/* Ajustes editoriais 24/10/2026: imagens canônicas, prova social, CTA da lista */
+body.marketing-page #acompanhar{scroll-margin-top:90px}
+body.marketing-page #historia,body.marketing-page #ciclo{scroll-margin-top:90px}
+body.marketing-page .eterea-figure,body.marketing-page .eterea-wide,body.marketing-page .cycle-figure{margin:0}
+body.marketing-page .eterea-figure img,body.marketing-page .eterea-wide img{width:100%;height:auto;object-fit:cover;border-radius:10px;box-shadow:0 18px 48px rgba(38,50,68,.13)}
+body.marketing-page .eterea-figure figcaption,body.marketing-page .eterea-wide figcaption,body.marketing-page .cycle-figure figcaption{font-size:12px;line-height:1.55;color:#626b77;margin-top:11px;text-align:center}
+body.marketing-page .eterea-wide{max-width:1050px;margin:38px auto 12px}
+body.marketing-page .eterea-wide img{aspect-ratio:16/10;object-position:center 45%}
+body.marketing-page .section-cta{display:flex;flex-direction:column;align-items:center;gap:8px;margin:31px auto 0;text-align:center}
+body.marketing-page .section-cta .micro{margin:0}
+body.marketing-page .cycle-figure{background:#fff;padding:20px;border:1px solid #e5dcd2;border-radius:11px;box-shadow:0 10px 30px rgba(38,47,60,.08)}
+body.marketing-page .cycle-figure img{width:min(100%,500px);height:auto;margin:auto}
+body.marketing-page .beta-section{background:#f9f5ec}
+body.marketing-page .beta-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+body.marketing-page .beta-card{margin:0;min-height:220px;background:#fffdf8;border:1px solid #e4d9c9;border-radius:9px;padding:29px 26px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 9px 24px rgba(30,42,59,.035)}
+body.marketing-page .beta-card:before{content:"“";font:62px/0.7 Georgia,serif;color:#a9804d;margin-bottom:20px}
+body.marketing-page .beta-card p{font:clamp(19px,2.3vw,25px)/1.35 Georgia,serif;color:#23344a;margin:0 0 30px}
+body.marketing-page .beta-card footer{display:flex;flex-direction:column;gap:4px;border-top:1px solid #e5daca;padding-top:17px;color:#53606c}
+body.marketing-page .beta-card footer strong{color:#27364b;font-size:14px}
+body.marketing-page .beta-card footer span{font-size:12px}
+@media(max-width:850px){body.marketing-page .beta-grid{grid-template-columns:1fr}body.marketing-page .beta-card{min-height:0}}
+@media(max-width:680px){body.marketing-page .eterea-wide{margin-top:25px}body.marketing-page .eterea-wide img{aspect-ratio:4/3}body.marketing-page .cycle-figure{padding:12px}body.marketing-page .beta-card{padding:23px}body.marketing-page .eterea-figure figcaption,body.marketing-page .eterea-wide figcaption{font-size:11px}}
