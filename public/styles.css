@@ -531,3 +531,16 @@ body.reader-unified[data-reading-theme=light]{--read-ui:#f6f2e9}
  body.cinematic-home .hero .hero-cover{max-width:305px}
  body.legal-page main.section{padding:42px 0 69px}
 }
+
+/* Conversões balanceadas: leitura e aviso de lançamento */
+body.marketing-page .conversion-pair{display:flex;align-items:center;justify-content:center;gap:13px;flex-wrap:wrap;margin-top:17px}
+body.marketing-page .conversion-pair .btn:not(.primary){color:#233f59;border:1px solid #7d8da0;background:transparent}
+body.marketing-page .conversion-pair .btn:not(.primary):hover{background:#13253e0b}
+body.book-hybrid .book-closing .conversion-pair{margin:26px 0 0}
+body.marketing-page .newsletter-fallback{margin:16px 0 0;font-size:14px}
+body.marketing-page .newsletter-fallback a{color:#f5d6a5;text-decoration:underline;text-underline-offset:4px;font-weight:700}
+body.book-hybrid .book-newsletter .newsletter-alternative{margin-top:20px}
+@media(max-width:680px){body.marketing-page .conversion-pair .btn{width:100%;max-width:390px}}
+/* Rodapé sem caracteres de copyright renderizados isoladamente */
+body.marketing-page .footer-bottom{min-width:0}
+body.marketing-page .footer-bottom span{overflow-wrap:break-word}
