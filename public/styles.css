@@ -488,3 +488,46 @@ body.book-hybrid .book-newsletter .email-card>.newsletter-alternative{margin-top
  body.book-hybrid .book-section{padding:45px 0}
  body.book-hybrid .book-story .book-image{max-width:100%}
 }
+
+/* Sistema visual unificado: home editorial-cinematográfica + páginas de suporte */
+body.cinematic-home .hero{position:relative;isolation:isolate;overflow:hidden;padding:clamp(56px,7.5vw,105px) 0;background:#0b1929!important;color:#f7f0e5}
+body.cinematic-home .hero:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(8,21,36,.97),rgba(8,21,36,.90) 47%,rgba(8,21,36,.58)),url('/assets/eterea.webp') center 48%/cover}
+body.cinematic-home .hero h1{color:#fff8ea;font-size:clamp(47px,5.7vw,80px);line-height:1.06}
+body.cinematic-home .hero h1 em{color:#f1c784}
+body.cinematic-home .hero .sublead{color:#f5f0e6}
+body.cinematic-home .hero .hero-support{color:#d8e0e7}
+body.cinematic-home .hero .btn.primary{background:#eac88e;border-color:#eac88e;color:#142338}
+body.cinematic-home .hero .btn:not(.primary){color:#fff;border-color:#c9d5de99;background:#ffffff10}
+body.cinematic-home .hero .hero-cover{max-width:465px}
+body.cinematic-home .hero .cover-stage{background:linear-gradient(145deg,#21364d,#102037);padding:clamp(17px,2.4vw,29px);border:1px solid #d7b47877;box-shadow:0 22px 56px #0007}
+body.cinematic-home .hero .hero-cover figcaption{color:#dbe1e9}
+body.cinematic-home #historia{background:#fffcf5!important}
+body.cinematic-home .highlight{background:#ede2d3!important}
+body.cinematic-home .cycle-section{background:#fcf8f0!important}
+body.cinematic-home .beta-section{background:#eee3d4!important}
+body.cinematic-home .author-section{background:#fbf7f0!important}
+body.cinematic-home .closing{background:#ede1d2!important}
+body.cinematic-home .cycle-figure img{width:100%;max-width:340px;height:auto;object-fit:contain}
+body.cinematic-home .eterea-wide{max-width:580px}
+body.cinematic-home .author-signature{display:block;margin:24px auto 0}
+body.legal-page{background:#f8f3eb}
+body.legal-page main.section{position:relative;background:linear-gradient(180deg,#fffaf3 0%,#f7efe3 100%);padding:clamp(52px,6vw,88px) 0 100px;min-height:56vh}
+body.legal-page main .narrow{max-width:790px}
+body.legal-page main h1{font-size:clamp(43px,5.5vw,68px);margin-bottom:17px;color:#223246}
+body.legal-page main h2{font-size:clamp(25px,2.8vw,34px);margin:32px 0 12px;color:#223246}
+body.legal-page main p{color:#485665;line-height:1.9}
+body.legal-page main a:not(.btn){text-decoration:underline;text-underline-offset:3px}
+body.legal-page .sitefoot{background:#13243a!important;color:#e5e8ea}
+body.legal-page .sitefoot .footer-columns{padding-top:46px;padding-bottom:39px}
+body.reader-unified .reading-bar{box-shadow:0 3px 17px rgba(10,22,38,.12)}
+body.reader-unified .read-progress{background:#ae7940}
+body.reader-unified[data-reading-theme=paper]{--read-ui:#ece2d1;--read-border:#c9bba4}
+body.reader-unified[data-reading-theme=light]{--read-ui:#f6f2e9}
+@media(max-width:850px){body.cinematic-home .hero .hero-cover{max-width:360px}}
+@media(max-width:680px){
+ body.cinematic-home .hero{padding:45px 0 53px}
+ body.cinematic-home .hero h1{font-size:clamp(39px,9.9vw,52px)}
+ body.cinematic-home .hero:before{background:linear-gradient(180deg,#07192df2,#07192de0),url('/assets/eterea.webp') center/cover}
+ body.cinematic-home .hero .hero-cover{max-width:305px}
+ body.legal-page main.section{padding:42px 0 69px}
+}
