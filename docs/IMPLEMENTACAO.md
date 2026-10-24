@@ -66,3 +66,16 @@
 - Não criar homepage, HTML, CSS, JavaScript, formulários ou páginas de livros.
 - A versão funcional da home já foi enviada ao repositório; publicar apenas com consentimento e métricas corretas. Cloudflare Workers está configurado conforme fluxo adotado.
 - Não copiar o portal interativo ou documentação canônica para o repositório público.
+
+
+## Ajustes da home 24/10/2026
+- [x] CTA principal aponta para `#acompanhar`, formulário de newsletter ao fim do percurso da página.
+- [x] Removido o rótulo “Primeira frase do Capítulo 1: O Sopro de Etérea”.
+- [x] CTA “Ler o primeiro capítulo grátis” na seção “Por que entrar em Etérea?” mantendo link público `/ciclo-de-jesed/ruinas-dos-ceus/ler/`.
+- [x] Imagens de Etérea e Ilha dos Pequenos adicionadas à biblioteca local de assets, a partir das versões correspondentes já publicadas em `dimensoesinfinitassite`.
+- [x] Ilustração de Ciclo de Jesed fornecida na conversa incluída em versão web compacta de **197 × 210 px** (importação em qualidade reduzida por limite do fluxo). **Pendência: importar o PNG original anexado em qualidade final para não desfocar em desktop.**
+- [x] Três cartões de depoimentos a partir de frases reconhecíveis dos leitores Augusto, Felipe e Sarah. Sem estrelas ou notas gerais até checagem direta no Lityra.
+- [ ] Conferir no painel autenticado **Avaliações beta → Exportar JSON** as notas `overallRating` e `finalComment` de cada leitor; usar a nota 1–5 apenas se constar e o trecho somente com autorização para uso promocional.
+- [ ] Configurar provedor da newsletter (app atual só ativa envio quando `/api/newsletter/status` confirma `ready`). Formulário aparece mas poderá estar desabilitado; **não anunciar inscrições como funcionais antes do teste**.
+- [ ] Testar mobile visualmente em 390px e 320px, clique de CTA, carregamento da arte e contraste.
+- [ ] Email Routing em Cloudflare: destinatário definido pelo autor como `portopeacehaven@gmail.com` TEMPORÁRIO; configuração/validação do recebimento ainda não confirmadas. Isto é separado da newsletter.
