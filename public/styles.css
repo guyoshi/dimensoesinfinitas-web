@@ -339,3 +339,80 @@ body.marketing-page .footer-bottom{padding-top:22px;padding-bottom:24px;border-t
   body.marketing-page .footer-bottom{flex-direction:column;gap:7px}
 }
 @media(max-width:360px){body.marketing-page .brand .brand-logo{width:104px}body.marketing-page .header-cta{max-width:120px;font-size:10px}}
+
+/* Landing Ruínas dos Céus: condução por blocos, sem afetar home nem leitor */
+body.book-landing{background:#f6f0e8}
+body.book-landing .book-section{padding:clamp(53px,6.1vw,82px) 0;border-top:1px solid #d6c9b8}
+body.book-landing .book-section:nth-of-type(even){background:#f8f3ec}
+body.book-landing .book-hero{padding:clamp(42px,5.2vw,78px) 0 clamp(53px,6vw,80px);background:#f5f0e8}
+body.book-landing .book-kicker,body.book-landing .book-label{display:block;color:#865b30;font:750 11px/1.6 system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;margin:0 0 16px}
+body.book-landing h1{font-size:clamp(39px,5.5vw,70px)}
+body.book-landing h2{font-size:clamp(35px,4.2vw,56px);line-height:1.15}
+body.book-landing .book-split{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);align-items:center;gap:clamp(30px,5.5vw,75px)}
+body.book-landing .book-prose{max-width:650px}
+body.book-landing .book-prose p{font-size:16px;line-height:1.85;margin-bottom:16px;color:#425063}
+body.book-landing .book-prose strong{color:#1c334b}
+body.book-landing .book-image{margin:0}
+body.book-landing .book-image img{display:block;width:100%;height:auto;object-fit:cover;border-radius:9px;box-shadow:0 15px 40px #24344b22}
+body.book-landing .book-image figcaption{font-size:12px;text-align:center;color:#606b77;margin-top:12px}
+body.book-landing .book-story{background:#fffaf4}
+body.book-landing .book-story .book-image img{aspect-ratio:4/3}
+body.book-landing .book-inline-cta{display:inline-flex;align-items:center;margin-top:10px;padding:7px 0;color:#1b3a5a;font-weight:750;font-size:14px;border-bottom:2px solid #b58b54}
+body.book-landing .book-inline-cta:hover{color:#8c5828}
+body.book-landing .book-experience{background:#efe4d6!important}
+body.book-landing .book-heading{max-width:770px;margin-bottom:30px}
+body.book-landing .book-heading p{font-size:16px;color:#556273}
+body.book-landing .book-traits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+body.book-landing .book-traits article{background:#fffcf6;border:1px solid #decdb8;border-radius:8px;padding:30px 27px;box-shadow:0 12px 25px #3542560a}
+body.book-landing .book-traits h3{font-size:clamp(25px,2.4vw,31px);margin-bottom:14px}
+body.book-landing .book-traits p{font-size:15px;color:#4e5a67;line-height:1.77}
+body.book-landing .book-mid-action{text-align:center;margin:30px auto 0}
+body.book-landing .book-mid-action p{margin-bottom:11px}
+body.book-landing .book-world{background:#fbf7ef!important}
+body.book-landing .book-world-grid{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)}
+body.book-landing .world-image{max-width:480px;justify-self:center}
+body.book-landing .world-image img{aspect-ratio:4/3}
+body.book-landing .book-sample{background:#e9e1d6!important}
+body.book-landing .sample-panel{width:100%;padding:25px;background:linear-gradient(135deg,#263c57,#102037);border-radius:12px;box-shadow:0 22px 50px #1d2b3a3a}
+body.book-landing .sample-paper{background:#f7f1e6;border-radius:4px;min-height:335px;padding:45px 38px;border:1px solid #ddc9a7;display:flex;flex-direction:column;justify-content:center}
+body.book-landing .sample-paper span{font:700 10px/1.4 system-ui,sans-serif;letter-spacing:.21em;color:#8b633a}
+body.book-landing .sample-paper h3{font-size:clamp(30px,3.4vw,44px);margin:14px 0 16px}
+body.book-landing .sample-paper p{font:18px/1.6 Georgia,serif;color:#3d4a55}
+body.book-landing .sample-paper a{font-weight:750;color:#244561;font-size:14px;text-decoration:underline;text-underline-offset:4px}
+body.book-landing .book-cycle{background:#fffbf5!important}
+body.book-landing .book-cycle-figure{width:100%;max-width:405px;margin:auto}
+body.book-landing .book-cycle-figure img{width:100%;max-width:350px;height:auto;object-fit:contain}
+body.book-landing .book-beta{background:#efe5d8!important}
+body.book-landing .book-beta .beta-card{min-height:290px}
+body.book-landing .book-author{background:#fcf8f2!important}
+body.book-landing .book-author .author-portrait{width:100%;max-width:285px;margin:auto}
+body.book-landing .book-faq{background:#f0e9df!important}
+body.book-landing .book-faq .faq{border-color:#d2c4b3}
+body.book-landing .book-newsletter{background:linear-gradient(120deg,#172c47,#273f58)!important}
+body.book-landing .book-newsletter .book-label{color:#efd19d}
+body.book-landing .book-newsletter .newsletter-alternative{font-size:14px;margin:16px 0 0;color:#edf1f7}
+body.book-landing .book-newsletter .newsletter-alternative a{text-decoration:underline;text-underline-offset:4px;color:#ffe2b0;font-weight:750}
+body.book-landing .book-newsletter .email-card{max-width:790px}
+body.book-landing .book-closing{background:#f6f0e6!important}
+body.book-landing .sitefoot{border-top:1px solid #1a2a3b}
+body.book-landing #historia,body.book-landing #experiencia,body.book-landing #ciclo,body.book-landing #perguntas,body.book-landing #amostra,body.book-landing #newsletter{scroll-margin-top:84px}
+@media(max-width:850px){
+  body.book-landing .book-split,body.book-landing .book-world-grid{grid-template-columns:1fr;gap:27px}
+  body.book-landing .book-story .book-image,body.book-landing .world-image{max-width:620px;margin:auto}
+  body.book-landing .book-traits{grid-template-columns:1fr}
+  body.book-landing .book-traits article{padding:24px}
+  body.book-landing .book-cycle-figure{max-width:335px}
+}
+@media(max-width:680px){
+  body.book-landing .book-section{padding:46px 0}
+  body.book-landing .book-hero{padding:38px 0 49px}
+  body.book-landing h1{font-size:clamp(35px,9.5vw,44px)}
+  body.book-landing h2{font-size:clamp(31px,8vw,41px)}
+  body.book-landing .book-prose p{font-size:15px;line-height:1.77}
+  body.book-landing .book-world-grid .world-image{max-width:375px}
+  body.book-landing .book-cycle-figure{max-width:285px}
+  body.book-landing .sample-panel{padding:13px}
+  body.book-landing .sample-paper{min-height:275px;padding:30px 23px}
+  body.book-landing .book-traits article{padding:23px}
+  body.book-landing .book-heading{margin-bottom:23px}
+}
