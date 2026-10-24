@@ -277,3 +277,18 @@ body.marketing-page .beta-card footer strong{color:#27364b;font-size:14px}
 body.marketing-page .beta-card footer span{font-size:12px}
 @media(max-width:850px){body.marketing-page .beta-grid{grid-template-columns:1fr}body.marketing-page .beta-card{min-height:0}}
 @media(max-width:680px){body.marketing-page .eterea-wide{margin-top:25px}body.marketing-page .eterea-wide img{aspect-ratio:4/3}body.marketing-page .cycle-figure{padding:12px}body.marketing-page .beta-card{padding:23px}body.marketing-page .eterea-figure figcaption,body.marketing-page .eterea-wide figcaption{font-size:11px}}
+
+/* Correções solicitadas em 24/10: tamanhos editoriais, assinatura, depoimentos. */
+body.marketing-page .eterea-wide{max-width:610px;width:100%;margin:29px auto 14px}
+body.marketing-page .eterea-wide img{width:100%;aspect-ratio:4/3;object-fit:cover;object-position:center center}
+body.marketing-page .cycle-figure{max-width:360px;width:100%;justify-self:center;margin-inline:auto;padding:15px}
+body.marketing-page .cycle-figure img{display:block;width:min(100%,260px);height:auto;max-width:100%;margin:auto;object-fit:contain}
+body.marketing-page .author-signature{display:block;margin:22px auto 0;width:190px;height:auto;max-width:75%;object-fit:contain;object-position:center}
+body.marketing-page .beta-card{min-height:290px;padding:33px 29px}
+body.marketing-page .beta-card p{font-size:clamp(21px,2.2vw,27px);line-height:1.53}
+body.marketing-page .beta-card .beta-gap{font-style:normal;color:#966d42;font-size:18px;white-space:nowrap}
+body.marketing-page .beta-card .beta-intro{font-size:14px;font-family:system-ui,sans-serif;font-weight:700;color:#8a6338;letter-spacing:.02em;margin:0 0 13px}
+body.marketing-page .beta-card .beta-note{font:17px/1.7 system-ui,-apple-system,"Segoe UI",sans-serif;color:#34465a}
+body.marketing-page .beta-card footer span{line-height:1.5}
+@media(max-width:850px){body.marketing-page .eterea-wide{max-width:500px}body.marketing-page .cycle-figure{max-width:335px}body.marketing-page .beta-card{min-height:0}}
+@media(max-width:680px){body.marketing-page .eterea-wide{max-width:100%;width:min(100%,390px)}body.marketing-page .eterea-wide img{aspect-ratio:4/3}body.marketing-page .cycle-figure{max-width:300px}body.marketing-page .cycle-figure img{width:min(100%,250px)}body.marketing-page .beta-card{padding:26px 23px}body.marketing-page .author-signature{margin:25px auto 0}}
