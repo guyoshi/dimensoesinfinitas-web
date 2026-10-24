@@ -430,3 +430,61 @@ body.marketing-page.home-page .hero{padding:clamp(38px,5vw,65px) 0}
 body.marketing-page.home-page .email-section{padding:clamp(59px,6vw,83px) 0}
 body.book-landing .book-section{padding:clamp(48px,5.3vw,72px) 0}
 @media(max-width:680px){body.marketing-page.home-page .section{padding:45px 0}body.marketing-page.home-page .hero{padding:38px 0 46px}body.book-landing .book-section{padding:45px 0}}
+
+/* Híbrido editorial + hero cinematográfico (Ruínas dos Céus) */
+body.book-hybrid .book-hero{
+  position:relative;isolation:isolate;overflow:hidden;color:#fff8eb;
+  background:#091728!important;
+  padding:clamp(66px,8vw,110px) 0;
+  border-bottom:1px solid #d4b47d66;
+}
+body.book-hybrid .book-hero:before{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(90deg,rgba(5,17,30,.96),rgba(8,25,43,.90) 46%,rgba(8,25,43,.61)),url('/assets/eterea.webp') center center/cover;
+}
+body.book-hybrid .book-hero:after{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse 60% 75% at 85% 50%,transparent,#0b1a2a65)}
+body.book-hybrid .book-hero h1{color:#fff9ee;font-size:clamp(46px,5.5vw,79px);line-height:1.08;letter-spacing:-.044em;max-width:800px}
+body.book-hybrid .book-hero h1 em{color:#f2c780}
+body.book-hybrid .book-hero .sublead{color:#f3f3ef;font-size:clamp(18px,1.8vw,21px);line-height:1.7}
+body.book-hybrid .book-hero .hero-support{color:#c9d7e2;font-size:16px}
+body.book-hybrid .book-hero .btn.primary{background:#e6c28a;color:#17263a;border-color:#e6c28a;box-shadow:0 11px 30px #0004}
+body.book-hybrid .book-hero .btn.primary:hover{background:#f3d7a8;border-color:#f3d7a8}
+body.book-hybrid .book-hero .btn:not(.primary){color:#f6f4f2;background:#ffffff12;border-color:#c9d5e7aa}
+body.book-hybrid .book-hero .hero-cover{max-width:465px}
+body.book-hybrid .book-hero .cover-stage{background:linear-gradient(145deg,#24364b,#172538);border:1px solid #cba97466;padding:clamp(15px,2.5vw,30px);box-shadow:0 26px 58px #0006}
+body.book-hybrid .book-hero .hero-cover img{max-height:660px;width:100%;object-fit:contain;box-shadow:0 18px 40px #0009}
+body.book-hybrid .book-hero .hero-cover figcaption{color:#d6deea}
+body.book-hybrid .book-story{background:#fffaf4!important}
+body.book-hybrid .book-experience{background:#efe7db!important}
+body.book-hybrid .book-world{position:relative;isolation:isolate;background:#142539!important;color:#f7f3e9}
+body.book-hybrid .book-world:before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at top right,#3a5465b0,transparent 72%)}
+body.book-hybrid .book-world h2,body.book-hybrid .book-world .book-prose h2{color:#f8efe0}
+body.book-hybrid .book-world .book-prose p{color:#e0e4eb}
+body.book-hybrid .book-world .book-inline-cta{color:#f0d199;border-color:#d5ad78}
+body.book-hybrid .book-world .book-image figcaption{color:#c7d3de}
+body.book-hybrid .book-sample{background:#fbf6ee!important}
+body.book-hybrid .book-cycle{background:#eee2d1!important}
+body.book-hybrid .book-beta{background:#fff9ef!important}
+body.book-hybrid .book-author{background:#efe6db!important}
+body.book-hybrid .book-faq{background:#faf5ed!important}
+body.book-hybrid .book-newsletter{background:linear-gradient(120deg,#162b44,#233b52)!important}
+body.book-hybrid .book-closing{background:#f2e7d8!important}
+body.book-hybrid .book-label,body.book-hybrid .book-kicker{display:none!important}
+body.book-hybrid .book-section{padding:clamp(53px,5.6vw,76px) 0}
+body.book-hybrid .book-traits article{background:#fffcf7}
+body.book-hybrid .book-cycle-figure{background:#fffdf8}
+body.book-hybrid .book-cycle-figure img{image-rendering:auto}
+body.book-hybrid .book-newsletter .email-card>.newsletter-alternative{margin-top:18px}
+@media(max-width:850px){
+ body.book-hybrid .book-hero{padding:48px 0 62px}
+ body.book-hybrid .book-hero .hero-cover{max-width:360px}
+ body.book-hybrid .book-hero:before{background:linear-gradient(180deg,#08192ef5,#08192ecd),url('/assets/eterea.webp') center/cover}
+}
+@media(max-width:680px){
+ body.book-hybrid .book-hero{padding:38px 0 52px}
+ body.book-hybrid .book-hero h1{font-size:clamp(38px,10vw,52px)}
+ body.book-hybrid .book-hero .sublead{font-size:17px}
+ body.book-hybrid .book-hero .hero-cover{max-width:300px}
+ body.book-hybrid .book-section{padding:45px 0}
+ body.book-hybrid .book-story .book-image{max-width:100%}
+}
