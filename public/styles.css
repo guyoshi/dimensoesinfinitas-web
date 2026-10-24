@@ -416,3 +416,17 @@ body.book-landing #historia,body.book-landing #experiencia,body.book-landing #ci
   body.book-landing .book-traits article{padding:23px}
   body.book-landing .book-heading{margin-bottom:23px}
 }
+
+/* Ajustes consensuais da home, independentes dos três protótipos */
+body.marketing-page.home-page .hero{background:#f6f0e8}
+body.marketing-page.home-page #historia{background:#fffaf3;border-top:1px solid #e5d9c9}
+body.marketing-page.home-page .highlight{background:#efe3d3;border-top:1px solid #ddcfbc;border-bottom:1px solid #ddcfbc}
+body.marketing-page.home-page .cycle-section{background:#faf5ed;border-top:1px solid #e3d7c8}
+body.marketing-page.home-page .beta-section{background:#eadfcf;border-top:1px solid #d9c8b3}
+body.marketing-page.home-page .author-section{background:#faf7f0;border-top:1px solid #e3d8c7}
+body.marketing-page.home-page .closing{background:#e9dfd2;border-top:1px solid #d9c8b5}
+body.marketing-page.home-page .section{padding:clamp(47px,5.1vw,72px) 0}
+body.marketing-page.home-page .hero{padding:clamp(38px,5vw,65px) 0}
+body.marketing-page.home-page .email-section{padding:clamp(59px,6vw,83px) 0}
+body.book-landing .book-section{padding:clamp(48px,5.3vw,72px) 0}
+@media(max-width:680px){body.marketing-page.home-page .section{padding:45px 0}body.marketing-page.home-page .hero{padding:38px 0 46px}body.book-landing .book-section{padding:45px 0}}
