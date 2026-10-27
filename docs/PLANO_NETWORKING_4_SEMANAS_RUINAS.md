@@ -15,6 +15,73 @@
 - Dedicação inicial: **2–3 horas por semana**; é estimativa de organização, não obrigação.
 - Registrar conversas e follow-ups com discrição; não copiar mensagens privadas nem dados pessoais de terceiros para um repositório público. Listas de contatos pessoais ficam fora deste GitHub.
 
+## Perfil de autor e entrada no BookTok
+
+### Bio recomendada para Instagram
+
+```text
+Gui Anjos | autor de fantasia
+Ruínas dos Céus • Ciclo de Jesed
+Civilizações suspensas. Mundos em ruína.
+↓ Dimensões Infinitas
+```
+
+Usar uma foto do autor nítida ou a marca de Dimensões Infinitas, o mesmo nome de utilizador em todas as redes quando estiver disponível e o link `dimensoesinfinitas.com` no único campo de link. A bio precisa dizer rapidamente quem é o autor, qual é o livro em foco e qual promessa de leitura existe; não incluir uma lista de todas as séries neste momento.
+
+### Criar a conta no TikTok BookTok
+
+1. Criar ou converter a conta com o nome de utilizador mais próximo possível do Instagram atual, preferencialmente `@guilhermeslanjos` ou `@dimensoesinfinitas`.
+2. Definir o nome exibido como `Guilherme S. L. Anjos | Fantasia` e usar a mesma foto de perfil do Instagram.
+3. Inserir a bio: `Autor de fantasia brasileira. Ruínas dos Céus: uma civilização acima do mundo, até o céu cair.` Adicionar o link do site quando a conta o permitir.
+4. Fixar três vídeos de entrada antes de procurar alcance: quem é o autor e BBBB aos 10 anos; a capa e premissa de Ruínas dos Céus; a pergunta “o que você consideraria impossível numa civilização que nunca tocou o chão?”.
+5. Produzir em vídeo vertical, 15 a 35 segundos, com uma ideia por vídeo, legenda na tela e uma pergunta final. Priorizar rosto, voz, processo criativo, capa e cenas do universo; não usar apenas imagens estáticas com texto.
+
+### Pilares de conteúdo para os primeiros 30 dias
+
+| Pilar | Exemplos | Frequência inicial |
+|---|---|---:|
+| Bastidores de autor | BBBB aos 10 anos, manuscritos, construção de mundo | 1 por semana |
+| Ruínas dos Céus | Etérea, capa, perguntas sem spoiler, microtrechos aprovados | 1 a 2 por semana |
+| Conversa com leitores | dilemas, leituras de fantasia, enquetes, respostas em vídeo | 1 por semana |
+| Repertório | livros e elementos de fantasia épica que Gui realmente leu | 1 por semana |
+
+## Descoberta de 30 perfis e interações genuínas
+
+O objetivo não é seguir 30 contas em sequência para parecer ativo. É compor uma lista de 30 perfis brasileiros com público e conversa compatíveis, em blocos de cinco por dia durante seis dias. Antes de seguir, verificar: conteúdo recente, leitura de fantasia adulta ou literatura brasileira, comentários reais e uma forma respeitosa de falar de livros.
+
+Distribuição sugerida para os 30 perfis:
+
+- 12 leitores e criadores de Bookstagram que leem fantasia, ficção especulativa ou autores brasileiros;
+- 8 criadores de BookTok que publiquem recomendações ou leituras de fantasia;
+- 5 autores brasileiros de fantasia com presença ativa;
+- 3 clubes de leitura, livrarias independentes ou comunidades literárias;
+- 2 perfis editoriais do nicho para acompanhar tendências, sem expectativa de parceria imediata.
+
+Fluxo por perfil:
+
+1. Assistir ou ler três conteúdos recentes.
+2. Seguir somente se houver alinhamento real.
+3. Curtir no máximo um ou dois conteúdos que tenham despertado interesse de verdade.
+4. Comentar apenas quando houver algo específico a acrescentar: uma pergunta sobre a leitura, uma reação a uma ideia ou uma conexão honesta com o próprio repertório.
+5. Não mandar DM logo após seguir. Uma mensagem só faz sentido depois de uma troca pública natural ou quando o criador pedir sugestões, leituras ou contactos.
+
+Exemplos de comentários que não soam promocionais:
+
+- “A ideia de uma cidade construída sobre uma crença que começa a ruir me pegou. Esse tipo de conflito fica muito depois da leitura.”
+- “Você mencionou fantasia com consequência política. Qual livro brasileiro do gênero você acha que trabalha isso melhor?”
+- “Gostei de como você separou ‘grande mundo’ de ‘boa construção de mundo’. O detalhe cotidiano realmente é o que faz o lugar respirar.”
+
+Nunca colar o mesmo comentário, pedir resenha, oferecer arquivo sem convite, nem usar mensagens automáticas. Manter os nomes, links, conversas e consentimentos em uma lista privada, fora deste repositório.
+
+## Ações desta semana
+
+- [ ] Atualizar a bio do Instagram com a versão recomendada.
+- [ ] Criar ou converter a conta de TikTok e completar perfil, foto e link.
+- [ ] Publicar os três vídeos de entrada em dias alternados.
+- [ ] Encontrar, avaliar e seguir os primeiros cinco perfis brasileiros alinhados.
+- [ ] Fazer duas interações genuínas por dia, sem divulgar o livro em todos os comentários.
+- [ ] Ampliar a lista até 30 perfis durante seis dias e rever quais conversas tiveram resposta.
+
 ## Cronograma integrado ao lembrete de sextas
 
 | Semana | Intervalo | Marco do cronograma de lançamento | Plano de networking e entregável mensurável |
