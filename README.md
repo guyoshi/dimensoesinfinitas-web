@@ -1,5 +1,21 @@
 # Dimensões Infinitas — site comercial oficial
 
+<!-- DI-PROJECT-IDENTITY -->
+## Identificação inequívoca deste projeto
+
+**ID interno:** `DI-COMERCIAL`  
+**Nome de trabalho:** Site Vitrine  
+**Repositório:** `guyoshi/dimensoesinfinitas-web`
+
+**Finalidade:** Site comercial público: divulgação de livros e lançamentos, leitura gratuita, captação consentida de leitores (leads) e conversão em vendas.
+
+**Quando Gui disser** “site comercial, site de leads, site de lançamento, site vitrine”, trabalhar **neste repositório**.
+
+**Não confundir com:** `guyoshi/dimensoesinfinitassite` = **DI-PORTAL**, portal de exploração literária; `guyoshi/dimensoesinfinitas` = **DI-ACERVO**, manuscritos e cânone.
+
+**Regra para assistentes e colaboradores:** antes de editar, identificar o projeto pelo repositório e pelo ID interno; não alterar dados, URLs, publicação ou manuscritos de outro projeto por engano. Se o pedido mencionar apenas “site Dimensões Infinitas” e o contexto não distinguir comercial de portal, verificar o objetivo antes de modificar arquivos.
+<!-- /DI-PROJECT-IDENTITY -->
+
 **Atualizado 23/10/2026 (revisão mobile/contraste):** home e landing comercial agora usam fundo creme editorial, tipografia escura e azul profundo nas chamadas; reorganizadas para uma razão diferente por bloco, com até dois CTAs de leitura por página, além do formulário. Capa centralizada e enquadrada no celular. Selo dourado oficial como favicon. Leitor gratuito do Capítulo 1 agora inicia em sépia, com opções claro/escuro. **A publicação das páginas foi verificada no domínio; a integração de inscritos beehiiv ainda precisa das credenciais e de um teste ponta a ponta.**
 
 ## Objetivo
